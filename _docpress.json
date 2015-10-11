@@ -171,7 +171,7 @@
         ]
       },
       {
-        "title": "Etc",
+        "title": "Notes",
         "sections": [
           {
             "title": "Pitfalls",
@@ -207,13 +207,13 @@
                     "title": "BEM",
                     "depth": 3,
                     "id": "bem"
-                  },
-                  {
-                    "title": "Terminologies",
-                    "depth": 3,
-                    "id": "terminologies"
                   }
                 ]
+              },
+              {
+                "title": "Terminologies",
+                "depth": 2,
+                "id": "terminologies"
               }
             ]
           }
@@ -410,13 +410,13 @@
               "title": "BEM",
               "depth": 3,
               "id": "bem"
-            },
-            {
-              "title": "Terminologies",
-              "depth": 3,
-              "id": "terminologies"
             }
           ]
+        },
+        {
+          "title": "Terminologies",
+          "depth": 2,
+          "id": "terminologies"
         }
       ]
     },
