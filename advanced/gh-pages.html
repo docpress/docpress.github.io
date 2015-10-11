@@ -1,4 +1,20 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/style.css?t=c86c2f30"><title>Automating GitHub pages</title></head><body class="-menu-visible"><div class="doc-layout"><div class="toggle menu-toggle js-menu-toggle"></div><div class="body page-advancedgh-pages"><div class="header-nav"><div class="right"><a href="https://github.com/docpress/docpress" data-title="docpress/docpress" class="iconlink"><!-- span.title Open in GitHub--><span class="icon -github"></span></a></div></div><div class="markdown-body"><h1 id="automating-github-pages">Automating GitHub pages</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/style.css?t=f78118d4">
+    <title>Automating GitHub pages</title>
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="body page-advancedgh-pages">
+        <div class="header-nav">
+          <div class="right"><a href="https://github.com/docpress/docpress" data-title="docpress/docpress" class="iconlink">
+              <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="automating-github-pages">Automating GitHub pages</h1>
 <p>You can use Travis and <a href="https://github.com/rstacruz/git-update-ghpages">git-update-ghpages</a> to automatically update your website&apos;s <code>gh-pages</code> branch.</p>
 <h2 id="generate-a-github-token">Generate a GitHub token</h2>
 <p>Generate a <a href="https://github.com/settings/tokens/new">GitHub token</a>. Travis will use this to push to your repository on your behalf. You can use any name, but you can call it <em>Travis CI</em>. Keep this token somewhere safe; you can use it for any of your repositories that will need git-update-ghpages deployments.</p>
@@ -60,4 +76,53 @@ script:
 after_success:
 - if [ &quot;$TRAVIS_BRANCH&quot; = &quot;master&quot; -a &quot;$TRAVIS_PULL_REQUEST&quot; = &quot;false&quot; ]; then ./node_modules/.bin/git-update-ghpages -e; fi
 </code></pre>
-</div><div class="footer-nav"><div class="left"><a href="../customization/config.html"><span class="title">Configuration</span></a></div></div></div><div class="menu toc-menu"><li class="menu-item -level-0 -parent"><ul class="submenu"><li class="menu-item -level-1"><a href="../index.html" class="link title  link-index">docpress</a></li><li class="menu-item -level-1 -parent"><span class="title">Getting started</span><ul class="submenu"><li class="menu-item -level-2"><a href="../getting-started/quickstart.html" class="link title  link-getting-startedquickstart">Quick-start guide</a></li><li class="menu-item -level-2"><a href="../getting-started/more-pages.html" class="link title  link-getting-startedmore-pages">Writing more pages</a></li></ul></li><li class="menu-item -level-1 -parent"><span class="title">Customization</span><ul class="submenu"><li class="menu-item -level-2"><a href="../customization/custom-css.html" class="link title  link-customizationcustom-css">Custom CSS</a></li><li class="menu-item -level-2"><a href="../customization/config.html" class="link title  link-customizationconfig">Configuration</a></li></ul></li><li class="menu-item -level-1 -parent"><span class="title">Advanced</span><ul class="submenu"><li class="menu-item -level-2"><a href="../advanced/gh-pages.html" class="link title -active link-advancedgh-pages">Automating GitHub pages</a><ul class="headings heading-list"><li class="heading-item -depth-2"><a href="#generate-a-github-token" class="hlink link-generate-a-github-token">Generate a GitHub token</a></li><li class="heading-item -depth-2"><a href="#adding-your-token" class="hlink link-adding-your-token">Adding your token</a></li><li class="heading-item -depth-2"><a href="#configuring-builds" class="hlink link-configuring-builds">Configuring builds</a></li><li class="heading-item -depth-2"><a href="#for-node.js-projects" class="hlink link-for-node.js-projects">For Node.js projects</a></li></ul></li></ul></li></ul></li></div></div><script src="../assets/script.js?t=09ab6609"></script></body></html>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../customization/config.html"><span class="title">Configuration</span></a></div>
+        </div>
+      </div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a href="../index.html" class="link title  link-index">docpress</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Getting started</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="../getting-started/quickstart.html" class="link title  link-getting-startedquickstart">Quick-start guide</a>
+                </li>
+                <li class="menu-item -level-2"><a href="../getting-started/more-pages.html" class="link title  link-getting-startedmore-pages">Writing more pages</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Customization</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="../customization/custom-css.html" class="link title  link-customizationcustom-css">Custom CSS</a>
+                </li>
+                <li class="menu-item -level-2"><a href="../customization/config.html" class="link title  link-customizationconfig">Configuration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Advanced</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a href="../advanced/gh-pages.html" class="link title -active link-advancedgh-pages">Automating GitHub pages</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a href="#generate-a-github-token" class="hlink link-generate-a-github-token">Generate a GitHub token</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#adding-your-token" class="hlink link-adding-your-token">Adding your token</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#configuring-builds" class="hlink link-configuring-builds">Configuring builds</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#for-node.js-projects" class="hlink link-for-node.js-projects">For Node.js projects</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </div>
+    <script src="../assets/script.js?t=de0b4e6d"></script>
+  </body>
+</html>
