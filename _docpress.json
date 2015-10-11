@@ -8,6 +8,11 @@
         "slug": "index",
         "headings": [
           {
+            "title": "What is it",
+            "depth": 2,
+            "id": "what-is-it"
+          },
+          {
             "title": "Examples",
             "depth": 2,
             "id": "examples"
@@ -28,11 +33,6 @@
             "url": "getting-started/quickstart.html",
             "slug": "getting-startedquickstart",
             "headings": [
-              {
-                "title": "Installation",
-                "depth": 2,
-                "id": "installation"
-              },
               {
                 "title": "Writing content",
                 "depth": 2,
@@ -126,6 +126,11 @@
       "slug": "index",
       "headings": [
         {
+          "title": "What is it",
+          "depth": 2,
+          "id": "what-is-it"
+        },
+        {
           "title": "Examples",
           "depth": 2,
           "id": "examples"
@@ -142,11 +147,6 @@
       "title": "Quick-start guide",
       "slug": "getting-startedquickstart",
       "headings": [
-        {
-          "title": "Installation",
-          "depth": 2,
-          "id": "installation"
-        },
         {
           "title": "Writing content",
           "depth": 2,
