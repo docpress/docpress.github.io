@@ -2,238 +2,449 @@
   "toc": {
     "sections": [
       {
-        "title": "docpress",
+        "title": "rscss",
         "source": "README.md",
         "url": "index.html",
         "slug": "index",
         "headings": [
           {
-            "title": "What is it",
+            "title": "Introduction",
             "depth": 2,
-            "id": "what-is-it"
-          },
-          {
-            "title": "Examples",
-            "depth": 2,
-            "id": "examples"
-          },
-          {
-            "title": "Usage",
-            "depth": 2,
-            "id": "usage"
+            "id": "introduction"
           }
         ]
       },
       {
-        "title": "Getting started",
+        "title": "Components",
         "sections": [
           {
-            "title": "Quick-start guide",
-            "source": "docs/getting-started/quickstart.md",
-            "url": "getting-started/quickstart.html",
-            "slug": "getting-startedquickstart",
+            "title": "About components",
+            "source": "docs/components.md",
+            "url": "components.html",
+            "slug": "components",
             "headings": [
               {
-                "title": "Local installation",
+                "title": "Naming components",
                 "depth": 2,
-                "id": "local-installation"
-              },
-              {
-                "title": "Writing content",
-                "depth": 2,
-                "id": "writing-content"
-              },
-              {
-                "title": "Previewing your site",
-                "depth": 2,
-                "id": "previewing-your-site"
+                "id": "naming-components"
               }
             ]
           },
           {
-            "title": "Writing more pages",
-            "source": "docs/getting-started/more-pages.md",
-            "url": "getting-started/more-pages.html",
-            "slug": "getting-startedmore-pages",
+            "title": "Elements",
+            "source": "docs/elements.md",
+            "url": "elements.html",
+            "slug": "elements",
             "headings": [
               {
-                "title": "Create your TOC",
+                "title": "Naming elements",
                 "depth": 2,
-                "id": "create-your-toc"
+                "id": "naming-elements"
+              },
+              {
+                "title": "Element selectors",
+                "depth": 2,
+                "id": "element-selectors"
+              },
+              {
+                "title": "On multiple words",
+                "depth": 2,
+                "id": "on-multiple-words"
+              },
+              {
+                "title": "Avoid tag selectors",
+                "depth": 2,
+                "id": "avoid-tag-selectors"
+              }
+            ]
+          },
+          {
+            "title": "Variants",
+            "source": "docs/variants.md",
+            "url": "variants.html",
+            "slug": "variants",
+            "headings": [
+              {
+                "title": "Naming variants",
+                "depth": 2,
+                "id": "naming-variants"
+              },
+              {
+                "title": "Element variants",
+                "depth": 2,
+                "id": "element-variants"
+              },
+              {
+                "title": "Dash prefixes",
+                "depth": 2,
+                "id": "dash-prefixes"
+              }
+            ]
+          },
+          {
+            "title": "Nested components",
+            "source": "docs/nested-components.md",
+            "url": "nested-components.html",
+            "slug": "nested-components",
+            "headings": [
+              {
+                "title": "Variants",
+                "depth": 2,
+                "id": "variants"
+              },
+              {
+                "title": "Simplifying nested components",
+                "depth": 2,
+                "id": "simplifying-nested-components"
+              }
+            ]
+          },
+          {
+            "title": "Layouts",
+            "source": "docs/layouts.md",
+            "url": "layouts.html",
+            "slug": "layouts",
+            "headings": [
+              {
+                "title": "Avoid positioning properties",
+                "depth": 2,
+                "id": "avoid-positioning-properties"
+              },
+              {
+                "title": "Fixed dimensions",
+                "depth": 2,
+                "id": "fixed-dimensions"
+              },
+              {
+                "title": "Define positioning in parents",
+                "depth": 2,
+                "id": "define-positioning-in-parents"
+              }
+            ]
+          },
+          {
+            "title": "Helpers",
+            "source": "docs/helpers.md",
+            "url": "helpers.html",
+            "slug": "helpers",
+            "headings": [
+              {
+                "title": "Naming helpers",
+                "depth": 2,
+                "id": "naming-helpers"
+              },
+              {
+                "title": "Organizing helpers",
+                "depth": 2,
+                "id": "organizing-helpers"
               }
             ]
           }
         ]
       },
       {
-        "title": "Customization",
+        "title": "Structure",
         "sections": [
           {
-            "title": "Custom CSS",
-            "source": "docs/customization/custom-css.md",
-            "url": "customization/custom-css.html",
-            "slug": "customizationcustom-css",
+            "title": "CSS Structure",
+            "source": "docs/css-structure.md",
+            "url": "css-structure.html",
+            "slug": "css-structure",
             "headings": [
               {
-                "title": "Customizing variables",
+                "title": "One component per file",
                 "depth": 2,
-                "id": "customizing-variables"
+                "id": "one-component-per-file"
+              },
+              {
+                "title": "Use glob matching",
+                "depth": 2,
+                "id": "use-glob-matching"
+              },
+              {
+                "title": "Avoid over-nesting",
+                "depth": 2,
+                "id": "avoid-over-nesting"
               }
             ]
-          },
-          {
-            "title": "Configuration",
-            "source": "docs/customization/config.md",
-            "url": "customization/config.html",
-            "slug": "customizationconfig"
           }
         ]
       },
       {
-        "title": "Advanced",
+        "title": "Etc",
         "sections": [
           {
-            "title": "Automating GitHub pages",
-            "source": "docs/advanced/gh-pages.md",
-            "url": "advanced/gh-pages.html",
-            "slug": "advancedgh-pages",
+            "title": "Pitfalls",
+            "source": "docs/pitfalls.md",
+            "url": "pitfalls.html",
+            "slug": "pitfalls",
             "headings": [
               {
-                "title": "Generate a GitHub token",
+                "title": "Bleeding through nested components",
                 "depth": 2,
-                "id": "generate-a-github-token"
-              },
+                "id": "bleeding-through-nested-components"
+              }
+            ]
+          },
+          {
+            "title": "Apprehensions",
+            "source": "docs/apprehensions.md",
+            "url": "apprehensions.html",
+            "slug": "apprehensions"
+          },
+          {
+            "title": "Other resources",
+            "source": "docs/other-resources.md",
+            "url": "other-resources.html",
+            "slug": "other-resources",
+            "headings": [
               {
-                "title": "Adding your token",
+                "title": "Other solutions",
                 "depth": 2,
-                "id": "adding-your-token"
-              },
-              {
-                "title": "Configuring builds",
-                "depth": 2,
-                "id": "configuring-builds"
-              },
-              {
-                "title": "For Node.js projects",
-                "depth": 2,
-                "id": "for-node.js-projects"
+                "id": "other-solutions",
+                "headings": [
+                  {
+                    "title": "BEM",
+                    "depth": 3,
+                    "id": "bem"
+                  },
+                  {
+                    "title": "Terminologies",
+                    "depth": 3,
+                    "id": "terminologies"
+                  }
+                ]
               }
             ]
           }
         ]
+      },
+      {
+        "title": "Summary",
+        "source": "docs/summary.md",
+        "url": "summary.html",
+        "slug": "summary"
       }
     ]
   },
   "index": {
     "index.html": {
       "source": "README.md",
-      "title": "docpress",
+      "title": "rscss",
       "slug": "index",
       "headings": [
         {
-          "title": "What is it",
+          "title": "Introduction",
           "depth": 2,
-          "id": "what-is-it"
-        },
-        {
-          "title": "Examples",
-          "depth": 2,
-          "id": "examples"
-        },
-        {
-          "title": "Usage",
-          "depth": 2,
-          "id": "usage"
+          "id": "introduction"
         }
       ]
     },
-    "getting-started/quickstart.html": {
-      "source": "docs/getting-started/quickstart.md",
-      "title": "Quick-start guide",
-      "slug": "getting-startedquickstart",
+    "components.html": {
+      "source": "docs/components.md",
+      "title": "About components",
+      "slug": "components",
       "headings": [
         {
-          "title": "Local installation",
+          "title": "Naming components",
           "depth": 2,
-          "id": "local-installation"
-        },
-        {
-          "title": "Writing content",
-          "depth": 2,
-          "id": "writing-content"
-        },
-        {
-          "title": "Previewing your site",
-          "depth": 2,
-          "id": "previewing-your-site"
+          "id": "naming-components"
         }
       ]
     },
-    "getting-started/more-pages.html": {
-      "source": "docs/getting-started/more-pages.md",
-      "title": "Writing more pages",
-      "slug": "getting-startedmore-pages",
+    "elements.html": {
+      "source": "docs/elements.md",
+      "title": "Elements",
+      "slug": "elements",
       "headings": [
         {
-          "title": "Create your TOC",
+          "title": "Naming elements",
           "depth": 2,
-          "id": "create-your-toc"
+          "id": "naming-elements"
+        },
+        {
+          "title": "Element selectors",
+          "depth": 2,
+          "id": "element-selectors"
+        },
+        {
+          "title": "On multiple words",
+          "depth": 2,
+          "id": "on-multiple-words"
+        },
+        {
+          "title": "Avoid tag selectors",
+          "depth": 2,
+          "id": "avoid-tag-selectors"
         }
       ]
     },
-    "customization/custom-css.html": {
-      "source": "docs/customization/custom-css.md",
-      "title": "Custom CSS",
-      "slug": "customizationcustom-css",
+    "variants.html": {
+      "source": "docs/variants.md",
+      "title": "Variants",
+      "slug": "variants",
       "headings": [
         {
-          "title": "Customizing variables",
+          "title": "Naming variants",
           "depth": 2,
-          "id": "customizing-variables"
+          "id": "naming-variants"
+        },
+        {
+          "title": "Element variants",
+          "depth": 2,
+          "id": "element-variants"
+        },
+        {
+          "title": "Dash prefixes",
+          "depth": 2,
+          "id": "dash-prefixes"
         }
       ]
     },
-    "customization/config.html": {
-      "source": "docs/customization/config.md",
-      "title": "Configuration",
-      "slug": "customizationconfig"
-    },
-    "advanced/gh-pages.html": {
-      "source": "docs/advanced/gh-pages.md",
-      "title": "Automating GitHub pages",
-      "slug": "advancedgh-pages",
+    "nested-components.html": {
+      "source": "docs/nested-components.md",
+      "title": "Nested components",
+      "slug": "nested-components",
       "headings": [
         {
-          "title": "Generate a GitHub token",
+          "title": "Variants",
           "depth": 2,
-          "id": "generate-a-github-token"
+          "id": "variants"
         },
         {
-          "title": "Adding your token",
+          "title": "Simplifying nested components",
           "depth": 2,
-          "id": "adding-your-token"
-        },
-        {
-          "title": "Configuring builds",
-          "depth": 2,
-          "id": "configuring-builds"
-        },
-        {
-          "title": "For Node.js projects",
-          "depth": 2,
-          "id": "for-node.js-projects"
+          "id": "simplifying-nested-components"
         }
       ]
+    },
+    "layouts.html": {
+      "source": "docs/layouts.md",
+      "title": "Layouts",
+      "slug": "layouts",
+      "headings": [
+        {
+          "title": "Avoid positioning properties",
+          "depth": 2,
+          "id": "avoid-positioning-properties"
+        },
+        {
+          "title": "Fixed dimensions",
+          "depth": 2,
+          "id": "fixed-dimensions"
+        },
+        {
+          "title": "Define positioning in parents",
+          "depth": 2,
+          "id": "define-positioning-in-parents"
+        }
+      ]
+    },
+    "helpers.html": {
+      "source": "docs/helpers.md",
+      "title": "Helpers",
+      "slug": "helpers",
+      "headings": [
+        {
+          "title": "Naming helpers",
+          "depth": 2,
+          "id": "naming-helpers"
+        },
+        {
+          "title": "Organizing helpers",
+          "depth": 2,
+          "id": "organizing-helpers"
+        }
+      ]
+    },
+    "css-structure.html": {
+      "source": "docs/css-structure.md",
+      "title": "CSS Structure",
+      "slug": "css-structure",
+      "headings": [
+        {
+          "title": "One component per file",
+          "depth": 2,
+          "id": "one-component-per-file"
+        },
+        {
+          "title": "Use glob matching",
+          "depth": 2,
+          "id": "use-glob-matching"
+        },
+        {
+          "title": "Avoid over-nesting",
+          "depth": 2,
+          "id": "avoid-over-nesting"
+        }
+      ]
+    },
+    "pitfalls.html": {
+      "source": "docs/pitfalls.md",
+      "title": "Pitfalls",
+      "slug": "pitfalls",
+      "headings": [
+        {
+          "title": "Bleeding through nested components",
+          "depth": 2,
+          "id": "bleeding-through-nested-components"
+        }
+      ]
+    },
+    "apprehensions.html": {
+      "source": "docs/apprehensions.md",
+      "title": "Apprehensions",
+      "slug": "apprehensions"
+    },
+    "other-resources.html": {
+      "source": "docs/other-resources.md",
+      "title": "Other resources",
+      "slug": "other-resources",
+      "headings": [
+        {
+          "title": "Other solutions",
+          "depth": 2,
+          "id": "other-solutions",
+          "headings": [
+            {
+              "title": "BEM",
+              "depth": 3,
+              "id": "bem"
+            },
+            {
+              "title": "Terminologies",
+              "depth": 3,
+              "id": "terminologies"
+            }
+          ]
+        }
+      ]
+    },
+    "summary.html": {
+      "source": "docs/summary.md",
+      "title": "Summary",
+      "slug": "summary"
     }
   },
   "sources": {
     "README.md": "index.html",
-    "docs/getting-started/quickstart.md": "getting-started/quickstart.html",
-    "docs/getting-started/more-pages.md": "getting-started/more-pages.html",
-    "docs/customization/custom-css.md": "customization/custom-css.html",
-    "docs/customization/config.md": "customization/config.html",
-    "docs/advanced/gh-pages.md": "advanced/gh-pages.html",
+    "docs/components.md": "components.html",
+    "docs/elements.md": "elements.html",
+    "docs/variants.md": "variants.html",
+    "docs/nested-components.md": "nested-components.html",
+    "docs/layouts.md": "layouts.html",
+    "docs/helpers.md": "helpers.html",
+    "docs/css-structure.md": "css-structure.html",
+    "docs/pitfalls.md": "pitfalls.html",
+    "docs/apprehensions.md": "apprehensions.html",
+    "docs/other-resources.md": "other-resources.html",
+    "docs/summary.md": "summary.html",
     "docs/docpress.json": "docpress.json",
-    "docs/assets/custom.scss": "assets/custom.scss"
+    "docs/assets/custom.scss": "assets/custom.scss",
+    "docs/images/component-elements.png": "images/component-elements.png",
+    "docs/images/component-example.png": "images/component-example.png",
+    "docs/images/component-modifiers.png": "images/component-modifiers.png",
+    "docs/images/component-nesting.png": "images/component-nesting.png",
+    "docs/images/layouts.png": "images/layouts.png"
   }
 }
