@@ -34,6 +34,11 @@
             "slug": "getting-startedquickstart",
             "headings": [
               {
+                "title": "Local installation",
+                "depth": 2,
+                "id": "local-installation"
+              },
+              {
                 "title": "Writing content",
                 "depth": 2,
                 "id": "writing-content"
@@ -147,6 +152,11 @@
       "title": "Quick-start guide",
       "slug": "getting-startedquickstart",
       "headings": [
+        {
+          "title": "Local installation",
+          "depth": 2,
+          "id": "local-installation"
+        },
         {
           "title": "Writing content",
           "depth": 2,
