@@ -1,0 +1,179 @@
+{
+  "toc": {
+    "sections": [
+      {
+        "title": "docpress",
+        "source": "README.md",
+        "url": "index.html",
+        "slug": "index",
+        "headings": [
+          {
+            "title": "Examples",
+            "depth": 2,
+            "id": "examples"
+          },
+          {
+            "title": "Usage",
+            "depth": 2,
+            "id": "usage"
+          },
+          {
+            "title": "Getting started",
+            "depth": 2,
+            "id": "getting-started"
+          }
+        ]
+      },
+      {
+        "title": "Getting started",
+        "sections": [
+          {
+            "title": "Installation",
+            "source": "docs/getting-started/installation.md",
+            "url": "getting-started/installation.html",
+            "slug": "getting-startedinstallation"
+          }
+        ]
+      },
+      {
+        "title": "Customization",
+        "sections": [
+          {
+            "title": "Custom CSS",
+            "source": "docs/customization/custom-css.md",
+            "url": "customization/custom-css.html",
+            "slug": "customizationcustom-css",
+            "headings": [
+              {
+                "title": "Customizing variables",
+                "depth": 2,
+                "id": "customizing-variables"
+              }
+            ]
+          },
+          {
+            "title": "Configuration",
+            "source": "docs/customization/config.md",
+            "url": "customization/config.html",
+            "slug": "customizationconfig"
+          }
+        ]
+      },
+      {
+        "title": "Advanced",
+        "sections": [
+          {
+            "title": "Automating GitHub pages",
+            "source": "docs/advanced/gh-pages.md",
+            "url": "advanced/gh-pages.html",
+            "slug": "advancedgh-pages",
+            "headings": [
+              {
+                "title": "Generate a GitHub token",
+                "depth": 2,
+                "id": "generate-a-github-token"
+              },
+              {
+                "title": "Adding your token",
+                "depth": 2,
+                "id": "adding-your-token"
+              },
+              {
+                "title": "Configuring builds",
+                "depth": 2,
+                "id": "configuring-builds"
+              },
+              {
+                "title": "For Node.js projects",
+                "depth": 2,
+                "id": "for-node.js-projects"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "index": {
+    "index.html": {
+      "source": "README.md",
+      "title": "docpress",
+      "slug": "index",
+      "headings": [
+        {
+          "title": "Examples",
+          "depth": 2,
+          "id": "examples"
+        },
+        {
+          "title": "Usage",
+          "depth": 2,
+          "id": "usage"
+        },
+        {
+          "title": "Getting started",
+          "depth": 2,
+          "id": "getting-started"
+        }
+      ]
+    },
+    "getting-started/installation.html": {
+      "source": "docs/getting-started/installation.md",
+      "title": "Installation",
+      "slug": "getting-startedinstallation"
+    },
+    "customization/custom-css.html": {
+      "source": "docs/customization/custom-css.md",
+      "title": "Custom CSS",
+      "slug": "customizationcustom-css",
+      "headings": [
+        {
+          "title": "Customizing variables",
+          "depth": 2,
+          "id": "customizing-variables"
+        }
+      ]
+    },
+    "customization/config.html": {
+      "source": "docs/customization/config.md",
+      "title": "Configuration",
+      "slug": "customizationconfig"
+    },
+    "advanced/gh-pages.html": {
+      "source": "docs/advanced/gh-pages.md",
+      "title": "Automating GitHub pages",
+      "slug": "advancedgh-pages",
+      "headings": [
+        {
+          "title": "Generate a GitHub token",
+          "depth": 2,
+          "id": "generate-a-github-token"
+        },
+        {
+          "title": "Adding your token",
+          "depth": 2,
+          "id": "adding-your-token"
+        },
+        {
+          "title": "Configuring builds",
+          "depth": 2,
+          "id": "configuring-builds"
+        },
+        {
+          "title": "For Node.js projects",
+          "depth": 2,
+          "id": "for-node.js-projects"
+        }
+      ]
+    }
+  },
+  "sources": {
+    "README.md": "index.html",
+    "docs/getting-started/installation.md": "getting-started/installation.html",
+    "docs/customization/custom-css.md": "customization/custom-css.html",
+    "docs/customization/config.md": "customization/config.html",
+    "docs/advanced/gh-pages.md": "advanced/gh-pages.html",
+    "docs/docpress.json": "docpress.json",
+    "docs/assets/custom.scss": "assets/custom.scss"
+  }
+}

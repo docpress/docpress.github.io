@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="assets/style.css?t=c86c2f30"><title>docpress</title></head><body class="-menu-visible"><div class="doc-layout"><div class="toggle menu-toggle js-menu-toggle"></div><div class="body page-index"><div class="header-nav"><div class="right"><a href="https://github.com/docpress/docpress" data-title="docpress/docpress" class="iconlink"><!-- span.title Open in GitHub--><span class="icon -github"></span></a></div></div><div class="markdown-body"><h1 id="docpress">docpress</h1>
+<p>Documentation website generator.</p>
+<p><a href="https://travis-ci.org/docpress/docpress" title="See test builds"><img src="https://travis-ci.org/docpress/docpress.svg?branch=master" alt="Status"></a></p>
+<p>Docpress generates websites from your project&apos;s basic documentation; that is, at the very least, a <code>README.md</code> file. It also supports multiple Markdown pages in <code>docs/</code>.</p>
+<p>Under heavy development now; guides and instructions will magically appear here when we&apos;re stable.</p>
+<h2 id="examples">Examples</h2>
+<ul>
+<li>http://ricostacruz.com/dom101 (single readme)</li>
+<li>http://ricostacruz.com/onmount (multiple pages)</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<p>Still under heavy development, consider this a preview.</p>
+<pre><code>npm install -g docpress
+</code></pre>
+<h2 id="getting-started">Getting started</h2>
+<p>A project with Docpress-powered docs is simply a project where documentation lives in <code>docs/</code> as Markdown files. At the very least, a project with a single README file should suffice.</p>
+<h4 id="create-your-toc">Create your TOC</h4>
+<p>Your project should have <code>docs/README.md</code> as the table of contents. This is an unordered list of pages to link. Here&apos;s an example that will only have one file (your main README).</p>
+<pre><code class="lang-md"><span class="hljs-header">Documentation
+=============</span>
+
+<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Your project</span>](<span class="hljs-link_url">../README.md</span>)
+</code></pre>
+<p>You can make it bold (<code>**[Your project](../README.md)**</code>) to expand it&apos;s contents in the sidebar.</p>
+<h4 id="serve-or-build">Serve or build</h4>
+<p>Go to your project and run the server via <code>docpress s</code>, or build it via <code>docpress b</code>. The built site will be in <code>_docpress</code>.</p>
+<pre><code>docpress s[erve]
+docpress b[uild]
+</code></pre>
+<h4 id="configuration">Configuration</h4>
+<p>Optional config can be specified in <code>docs/docpress.json</code>. Here&apos;s the default file.</p>
+<pre><code class="lang-json"># docs/docpress.json
+{
+  &quot;plugins&quot;: {
+    &quot;docpress-core&quot;: {},
+    &quot;docpress-base&quot;: {}
+  }
+}
+</code></pre>
+</div><div class="footer-nav"><div class="right"><a href="getting-started/installation.html"><span class="label">Next: </span><span class="title">Installation</span></a></div></div></div><div class="menu toc-menu"><li class="menu-item -level-0 -parent"><ul class="submenu"><li class="menu-item -level-1"><a href="index.html" class="link title -active link-index">docpress</a><ul class="headings heading-list"><li class="heading-item -depth-2"><a href="#examples" class="hlink link-examples">Examples</a></li><li class="heading-item -depth-2"><a href="#usage" class="hlink link-usage">Usage</a></li><li class="heading-item -depth-2"><a href="#getting-started" class="hlink link-getting-started">Getting started</a></li></ul></li><li class="menu-item -level-1 -parent"><span class="title">Getting started</span><ul class="submenu"><li class="menu-item -level-2"><a href="getting-started/installation.html" class="link title  link-getting-startedinstallation">Installation</a></li></ul></li><li class="menu-item -level-1 -parent"><span class="title">Customization</span><ul class="submenu"><li class="menu-item -level-2"><a href="customization/custom-css.html" class="link title  link-customizationcustom-css">Custom CSS</a></li><li class="menu-item -level-2"><a href="customization/config.html" class="link title  link-customizationconfig">Configuration</a></li></ul></li><li class="menu-item -level-1 -parent"><span class="title">Advanced</span><ul class="submenu"><li class="menu-item -level-2"><a href="advanced/gh-pages.html" class="link title  link-advancedgh-pages">Automating GitHub pages</a></li></ul></li></ul></li></div></div><script src="assets/script.js?t=09ab6609"></script></body></html>
