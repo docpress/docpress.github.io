@@ -15,7 +15,10 @@ Be sure to turn off the &quot;show this in build log&quot; option.</p>
 <pre><code class="lang-sh">travis encrypt GITHUB_TOKEN=<span class="pl-s">&quot;your token here&quot;</span> --add
 </code></pre>
 <h2 id="configuring-builds">Configuring builds</h2>
-<p>Add this to your <code>.travis.yml</code> manifest. This will make a build happen after your test, then a deployment right after that. uIn this example, we&apos;re deploying <code>_docs</code> to <code>user/repo</code>.</p>
+<blockquote>
+<p>If you installed Docpress locally in your project, skip to the next section.</p>
+</blockquote>
+<p>Add this to your <code>.travis.yml</code> manifest. This will make a build happen after your test, then a deployment right after that. In this example, we&apos;re deploying <code>_docs</code> to <code>user/repo</code>.</p>
 <pre><code class="lang-yml"># .travis.yml
 node_js:
 - 4
@@ -40,6 +43,16 @@ after_success:
 npm install --save-dev --save-exact git-update-ghpages
 </code></pre>
 <pre><code class="lang-yml"># .travis.yml
+node_js:
+- 4
+
+env:
+  global:
+    - GIT_NAME: Travis CI
+    - GIT_EMAIL: nobody@nobody.org
+    - GITHUB_REPO: rstacruz/myproject
+    - GIT_SOURCE: _docpress
+
 script:
 - rake     # ...or whatever your test command is
 - ./node_modules/.bin/docpress build
