@@ -16,11 +16,6 @@
             "title": "Usage",
             "depth": 2,
             "id": "usage"
-          },
-          {
-            "title": "Getting started",
-            "depth": 2,
-            "id": "getting-started"
           }
         ]
       },
@@ -28,10 +23,40 @@
         "title": "Getting started",
         "sections": [
           {
-            "title": "Installation",
-            "source": "docs/getting-started/installation.md",
-            "url": "getting-started/installation.html",
-            "slug": "getting-startedinstallation"
+            "title": "Quick-start guide",
+            "source": "docs/getting-started/quickstart.md",
+            "url": "getting-started/quickstart.html",
+            "slug": "getting-startedquickstart",
+            "headings": [
+              {
+                "title": "Installation",
+                "depth": 2,
+                "id": "installation"
+              },
+              {
+                "title": "Writing content",
+                "depth": 2,
+                "id": "writing-content"
+              },
+              {
+                "title": "Previewing your site",
+                "depth": 2,
+                "id": "previewing-your-site"
+              }
+            ]
+          },
+          {
+            "title": "Writing more pages",
+            "source": "docs/getting-started/more-pages.md",
+            "url": "getting-started/more-pages.html",
+            "slug": "getting-startedmore-pages",
+            "headings": [
+              {
+                "title": "Create your TOC",
+                "depth": 2,
+                "id": "create-your-toc"
+              }
+            ]
           }
         ]
       },
@@ -109,18 +134,42 @@
           "title": "Usage",
           "depth": 2,
           "id": "usage"
-        },
-        {
-          "title": "Getting started",
-          "depth": 2,
-          "id": "getting-started"
         }
       ]
     },
-    "getting-started/installation.html": {
-      "source": "docs/getting-started/installation.md",
-      "title": "Installation",
-      "slug": "getting-startedinstallation"
+    "getting-started/quickstart.html": {
+      "source": "docs/getting-started/quickstart.md",
+      "title": "Quick-start guide",
+      "slug": "getting-startedquickstart",
+      "headings": [
+        {
+          "title": "Installation",
+          "depth": 2,
+          "id": "installation"
+        },
+        {
+          "title": "Writing content",
+          "depth": 2,
+          "id": "writing-content"
+        },
+        {
+          "title": "Previewing your site",
+          "depth": 2,
+          "id": "previewing-your-site"
+        }
+      ]
+    },
+    "getting-started/more-pages.html": {
+      "source": "docs/getting-started/more-pages.md",
+      "title": "Writing more pages",
+      "slug": "getting-startedmore-pages",
+      "headings": [
+        {
+          "title": "Create your TOC",
+          "depth": 2,
+          "id": "create-your-toc"
+        }
+      ]
     },
     "customization/custom-css.html": {
       "source": "docs/customization/custom-css.md",
@@ -169,7 +218,8 @@
   },
   "sources": {
     "README.md": "index.html",
-    "docs/getting-started/installation.md": "getting-started/installation.html",
+    "docs/getting-started/quickstart.md": "getting-started/quickstart.html",
+    "docs/getting-started/more-pages.md": "getting-started/more-pages.html",
     "docs/customization/custom-css.md": "customization/custom-css.html",
     "docs/customization/config.md": "customization/config.html",
     "docs/advanced/gh-pages.md": "advanced/gh-pages.html",

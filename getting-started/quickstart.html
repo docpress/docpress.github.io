@@ -1,0 +1,42 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../assets/style.css?t=c86c2f30"><title>Quick-start guide</title></head><body class="-menu-visible"><div class="doc-layout"><div class="toggle menu-toggle js-menu-toggle"></div><div class="body page-getting-startedquickstart"><div class="header-nav"><div class="right"><a href="https://github.com/docpress/docpress" data-title="docpress/docpress" class="iconlink"><!-- span.title Open in GitHub--><span class="icon -github"></span></a></div></div><div class="markdown-body"><h1 id="quick-start-guide">Quick-start guide</h1>
+<p>Docpress requires <a href="http://nodejs.org/">Node.js</a> 4.0 or higher.</p>
+<h2 id="installation">Installation</h2>
+<h4 id="global-installation">Global installation</h4>
+<p>Docpress is available via <a href="https://www.npmjs.com/package/docpress">npm</a>. It can be installed globally (<code>-g</code>) so you can use Docpress on any repository in your computer.</p>
+<pre><code>npm install -g docpress
+</code></pre>
+<h4 id="local-installation">Local installation</h4>
+<p>You can choose to install Docpress locally in your project. This is the prefered method, especially for JavaScript projects. Ensure that your project has a <code>package.json</code> already; if not, create it using:</p>
+<pre><code>npm init
+</code></pre>
+<p>Install it via npm:</p>
+<pre><code>npm install --save-dev --save-exact docpress
+</code></pre>
+<p>You can now run the <code>docpress</code> command via <code>./node_modules/.bin/docpress</code>. This may be cumbersome, so add aliases to Docpress via npm scripts. Edit your <code>package.json</code> and add these values in. Docpress will then be accessible via <code>npm run docs:build</code> and <code>npm run docs:serve</code>.</p>
+<pre><code class="lang-json"># package.json
+{
+  &quot;scripts&quot;: {
+    &quot;docs:build&quot;: &quot;docpress build&quot;,
+    &quot;docs:serve&quot;: &quot;docpress serve&quot;
+  }
+}
+</code></pre>
+<h2 id="writing-content">Writing content</h2>
+<h4 id="your-first-page">Your first page</h4>
+<p>This is usually your project&apos;s <code>README.md</code>. This is a simple Markdown file. Chances are you already have this.</p>
+<pre><code>My project
+==========
+
+This is my project and it is wonderful! Save this file as `README.md`.
+</code></pre>
+<p>You can add more pages later by creating a Table of Contents file; see <a href="">Writing more pages</a>.</p>
+<h2 id="previewing-your-site">Previewing your site</h2>
+<h4 id="serve-it">Serve it</h4>
+<p>Run the local server via <code>docpress s</code> (short for <code>serve</code>). This will build your site into <code>_docpress/</code> and run a local server with LiveReload.</p>
+<pre><code>docpress s
+</code></pre>
+<h4 id="gitignore">Gitignore</h4>
+<p>Docpress builds your output into <code>_docpress</code>, which you would probably want to not commit into your repository.</p>
+<pre><code class="lang-sh"><span class="pl-c1">echo</span> _docpress &gt;&gt; .gitignore
+</code></pre>
+</div><div class="footer-nav"><div class="left"><a href="../index.html"><span class="title">docpress</span></a></div><div class="right"><a href="../getting-started/more-pages.html"><span class="label">Next: </span><span class="title">Writing more pages</span></a></div></div></div><div class="menu toc-menu"><li class="menu-item -level-0 -parent"><ul class="submenu"><li class="menu-item -level-1"><a href="../index.html" class="link title  link-index">docpress</a></li><li class="menu-item -level-1 -parent"><span class="title">Getting started</span><ul class="submenu"><li class="menu-item -level-2"><a href="../getting-started/quickstart.html" class="link title -active link-getting-startedquickstart">Quick-start guide</a><ul class="headings heading-list"><li class="heading-item -depth-2"><a href="#installation" class="hlink link-installation">Installation</a></li><li class="heading-item -depth-2"><a href="#writing-content" class="hlink link-writing-content">Writing content</a></li><li class="heading-item -depth-2"><a href="#previewing-your-site" class="hlink link-previewing-your-site">Previewing your site</a></li></ul></li><li class="menu-item -level-2"><a href="../getting-started/more-pages.html" class="link title  link-getting-startedmore-pages">Writing more pages</a></li></ul></li><li class="menu-item -level-1 -parent"><span class="title">Customization</span><ul class="submenu"><li class="menu-item -level-2"><a href="../customization/custom-css.html" class="link title  link-customizationcustom-css">Custom CSS</a></li><li class="menu-item -level-2"><a href="../customization/config.html" class="link title  link-customizationconfig">Configuration</a></li></ul></li><li class="menu-item -level-1 -parent"><span class="title">Advanced</span><ul class="submenu"><li class="menu-item -level-2"><a href="../advanced/gh-pages.html" class="link title  link-advancedgh-pages">Automating GitHub pages</a></li></ul></li></ul></li></div></div><script src="../assets/script.js?t=09ab6609"></script></body></html>
