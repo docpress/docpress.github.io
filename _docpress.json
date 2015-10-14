@@ -115,6 +115,12 @@
             "source": "docs/customization/plugins.md",
             "url": "customization/plugins.html",
             "slug": "customizationplugins"
+          },
+          {
+            "title": "Markdown plugins",
+            "source": "docs/customization/markdown-plugins.md",
+            "url": "customization/markdown-plugins.html",
+            "slug": "customizationmarkdown-plugins"
           }
         ]
       },
@@ -254,6 +260,11 @@
       "title": "Using plugins",
       "slug": "customizationplugins"
     },
+    "customization/markdown-plugins.html": {
+      "source": "docs/customization/markdown-plugins.md",
+      "title": "Markdown plugins",
+      "slug": "customizationmarkdown-plugins"
+    },
     "advanced/gh-pages.html": {
       "source": "docs/advanced/gh-pages.md",
       "title": "Automating GitHub pages",
@@ -290,6 +301,7 @@
     "docs/customization/config.md": "customization/config.html",
     "docs/customization/custom-css.md": "customization/custom-css.html",
     "docs/customization/plugins.md": "customization/plugins.html",
+    "docs/customization/markdown-plugins.md": "customization/markdown-plugins.html",
     "docs/advanced/gh-pages.md": "advanced/gh-pages.html",
     "docs/docpress.json": "docpress.json",
     "docs/assets/custom.scss": "assets/custom.scss"
