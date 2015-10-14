@@ -109,6 +109,12 @@
                 "id": "customizing-variables"
               }
             ]
+          },
+          {
+            "title": "Using plugins",
+            "source": "docs/customization/plugins.md",
+            "url": "customization/plugins.html",
+            "slug": "customizationplugins"
           }
         ]
       },
@@ -243,6 +249,11 @@
         }
       ]
     },
+    "customization/plugins.html": {
+      "source": "docs/customization/plugins.md",
+      "title": "Using plugins",
+      "slug": "customizationplugins"
+    },
     "advanced/gh-pages.html": {
       "source": "docs/advanced/gh-pages.md",
       "title": "Automating GitHub pages",
@@ -278,6 +289,7 @@
     "docs/getting-started/images-and-linking.md": "getting-started/images-and-linking.html",
     "docs/customization/config.md": "customization/config.html",
     "docs/customization/custom-css.md": "customization/custom-css.html",
+    "docs/customization/plugins.md": "customization/plugins.html",
     "docs/advanced/gh-pages.md": "advanced/gh-pages.html",
     "docs/docpress.json": "docpress.json",
     "docs/assets/custom.scss": "assets/custom.scss"
