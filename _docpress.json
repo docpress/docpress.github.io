@@ -60,14 +60,43 @@
                 "title": "Create your TOC",
                 "depth": 2,
                 "id": "create-your-toc"
+              },
+              {
+                "title": "Nesting",
+                "depth": 2,
+                "id": "nesting"
               }
             ]
+          },
+          {
+            "title": "Images and linking",
+            "source": "docs/getting-started/images-and-linking.md",
+            "url": "getting-started/images-and-linking.html",
+            "slug": "getting-startedimages-and-linking"
           }
         ]
       },
       {
         "title": "Customization",
         "sections": [
+          {
+            "title": "Configuration",
+            "source": "docs/customization/config.md",
+            "url": "customization/config.html",
+            "slug": "customizationconfig",
+            "headings": [
+              {
+                "title": "Example",
+                "depth": 2,
+                "id": "example"
+              },
+              {
+                "title": "Available configuration",
+                "depth": 2,
+                "id": "available-configuration"
+              }
+            ]
+          },
           {
             "title": "Custom CSS",
             "source": "docs/customization/custom-css.md",
@@ -80,12 +109,6 @@
                 "id": "customizing-variables"
               }
             ]
-          },
-          {
-            "title": "Configuration",
-            "source": "docs/customization/config.md",
-            "url": "customization/config.html",
-            "slug": "customizationconfig"
           }
         ]
       },
@@ -178,6 +201,33 @@
           "title": "Create your TOC",
           "depth": 2,
           "id": "create-your-toc"
+        },
+        {
+          "title": "Nesting",
+          "depth": 2,
+          "id": "nesting"
+        }
+      ]
+    },
+    "getting-started/images-and-linking.html": {
+      "source": "docs/getting-started/images-and-linking.md",
+      "title": "Images and linking",
+      "slug": "getting-startedimages-and-linking"
+    },
+    "customization/config.html": {
+      "source": "docs/customization/config.md",
+      "title": "Configuration",
+      "slug": "customizationconfig",
+      "headings": [
+        {
+          "title": "Example",
+          "depth": 2,
+          "id": "example"
+        },
+        {
+          "title": "Available configuration",
+          "depth": 2,
+          "id": "available-configuration"
         }
       ]
     },
@@ -192,11 +242,6 @@
           "id": "customizing-variables"
         }
       ]
-    },
-    "customization/config.html": {
-      "source": "docs/customization/config.md",
-      "title": "Configuration",
-      "slug": "customizationconfig"
     },
     "advanced/gh-pages.html": {
       "source": "docs/advanced/gh-pages.md",
@@ -230,8 +275,9 @@
     "README.md": "index.html",
     "docs/getting-started/quickstart.md": "getting-started/quickstart.html",
     "docs/getting-started/more-pages.md": "getting-started/more-pages.html",
-    "docs/customization/custom-css.md": "customization/custom-css.html",
+    "docs/getting-started/images-and-linking.md": "getting-started/images-and-linking.html",
     "docs/customization/config.md": "customization/config.html",
+    "docs/customization/custom-css.md": "customization/custom-css.html",
     "docs/advanced/gh-pages.md": "advanced/gh-pages.html",
     "docs/docpress.json": "docpress.json",
     "docs/assets/custom.scss": "assets/custom.scss"

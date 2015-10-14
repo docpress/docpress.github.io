@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="markdown-body"><h1 id="writing-more-pages">Writing more pages</h1>
-<p>Add them to the table of contents.</p>
+<p>You can create a Table of Contents page to list down pages in your site. All pages must live inside the <code>docs/</code> folder&#x2014;Docpress only looks for files in the project root (eg, <em>/README.md</em>) and the <code>docs/</code> folder (eg, <em>/docs/Introduction.md</em>).</p>
 <h2 id="create-your-toc">Create your TOC</h2>
 <p>Create a table of contents as <code>docs/README.md</code>. This is the table of contents: an unordered list of pages to link. Here&apos;s an example that will only have one file (your main README).</p>
 <pre><code class="lang-md"><span class="hljs-header">Documentation
@@ -24,12 +24,42 @@
 
 <span class="hljs-bullet">* </span>[<span class="hljs-link_label">Your project</span>](<span class="hljs-link_url">../README.md</span>)
 </code></pre>
-<p>You can make it bold (<code>**[Your project](../README.md)**</code>) to expand it&apos;s contents in the sidebar.</p>
+<p>The first file in the TOC is <em>always</em> going to be the home page.</p>
+<h2 id="nesting">Nesting</h2>
+<p>To organize your pages into chapters, you can create sub-lists by indenting items that are under a certain parent. You can nest as far as you want, but it&apos;s only recommended to nest just one level down.</p>
+<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="hljs-link_label">Your project</span>](<span class="hljs-link_url">../README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Introduction</span>](<span class="hljs-link_url">intro/README.md</span>)
+  * [<span class="hljs-link_label">Getting started</span>](<span class="hljs-link_url">intro/getting-started.md</span>)
+  * [<span class="hljs-link_label">Installation</span>](<span class="hljs-link_url">intro/install.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Installation</span>](<span class="hljs-link_url">installation/README.md</span>)
+  * [<span class="hljs-link_label">Mac OS X</span>](<span class="hljs-link_url">installation/osx.md</span>)
+  * [<span class="hljs-link_label">Windows</span>](<span class="hljs-link_url">installation/windows.md</span>)
+</code></pre>
+<h4 id="non-links">Non-links</h4>
+<p>You don&apos;t need to link all pages&#x2014;you can create items that are not links. Great for headings or for pages that are yet to be written.</p>
+<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="hljs-link_label">Your project</span>](<span class="hljs-link_url">../README.md</span>)
+<span class="hljs-bullet">* </span>Introduction
+  * [<span class="hljs-link_label">Getting started</span>](<span class="hljs-link_url">intro/getting-started.md</span>)
+  * [<span class="hljs-link_label">Installation</span>](<span class="hljs-link_url">intro/install.md</span>)
+<span class="hljs-bullet">* </span>Installation
+  * [<span class="hljs-link_label">Mac OS X</span>](<span class="hljs-link_url">installation/osx.md</span>)
+  * [<span class="hljs-link_label">Windows</span>](<span class="hljs-link_url">installation/windows.md</span>)
+</code></pre>
+<h4 id="relative-and-absolute-paths">Relative and absolute paths</h4>
+<p>Links in the TOC can be relative or absolute. In this example, both links are equivalent.</p>
+<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="hljs-link_label">Your project</span>](<span class="hljs-link_url">../README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Your project</span>](<span class="hljs-link_url">/README.md</span>)
+</code></pre>
+<br>
+<hr>
+<p>Your Docpress site is growing! Why not add some images?
+<a href="images-and-linking.html">Continue &#x2192;</a></p>
+<!--{.pull-box}-->
 
         </div>
         <div class="footer-nav">
           <div class="left"><a href="../getting-started/quickstart.html"><span class="title">Quick-start guide</span></a></div>
-          <div class="right"><a href="../customization/custom-css.html"><span class="label">Next: </span><span class="title">Custom CSS</span></a></div>
+          <div class="right"><a href="../getting-started/images-and-linking.html"><span class="label">Next: </span><span class="title">Images and linking</span></a></div>
         </div>
       </div>
       <div class="menu toc-menu">
@@ -45,15 +75,19 @@
                   <ul class="headings heading-list">
                     <li class="heading-item -depth-2"><a href="#create-your-toc" class="hlink link-create-your-toc">Create your TOC</a>
                     </li>
+                    <li class="heading-item -depth-2"><a href="#nesting" class="hlink link-nesting">Nesting</a>
+                    </li>
                   </ul>
+                </li>
+                <li class="menu-item -level-2"><a href="../getting-started/images-and-linking.html" class="link title  link-getting-startedimages-and-linking">Images and linking</a>
                 </li>
               </ul>
             </li>
             <li class="menu-item -level-1 -parent"><span class="title">Customization</span>
               <ul class="submenu">
-                <li class="menu-item -level-2"><a href="../customization/custom-css.html" class="link title  link-customizationcustom-css">Custom CSS</a>
-                </li>
                 <li class="menu-item -level-2"><a href="../customization/config.html" class="link title  link-customizationconfig">Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a href="../customization/custom-css.html" class="link title  link-customizationcustom-css">Custom CSS</a>
                 </li>
               </ul>
             </li>
