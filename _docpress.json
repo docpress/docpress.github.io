@@ -104,9 +104,9 @@
           },
           {
             "title": "Custom CSS",
-            "source": "docs/customization/custom-css.md",
-            "url": "customization/custom-css.html",
-            "slug": "customizationcustom-css"
+            "source": "docs/customization/css.md",
+            "url": "customization/css.html",
+            "slug": "customizationcss"
           },
           {
             "title": "Using plugins",
@@ -136,9 +136,9 @@
                 "id": "installing-markdown-plugins"
               },
               {
-                "title": "Bundled Markdown plugins",
+                "title": "Bundled plugins",
                 "depth": 2,
-                "id": "bundled-markdown-plugins"
+                "id": "bundled-plugins"
               }
             ]
           }
@@ -281,10 +281,10 @@
         }
       ]
     },
-    "customization/custom-css.html": {
-      "source": "docs/customization/custom-css.md",
+    "customization/css.html": {
+      "source": "docs/customization/css.md",
       "title": "Custom CSS",
-      "slug": "customizationcustom-css"
+      "slug": "customizationcss"
     },
     "customization/plugins.html": {
       "source": "docs/customization/plugins.md",
@@ -312,9 +312,9 @@
           "id": "installing-markdown-plugins"
         },
         {
-          "title": "Bundled Markdown plugins",
+          "title": "Bundled plugins",
           "depth": 2,
-          "id": "bundled-markdown-plugins"
+          "id": "bundled-plugins"
         }
       ]
     },
@@ -364,7 +364,7 @@
     "docs/getting-started/more-pages.md": "getting-started/more-pages.html",
     "docs/getting-started/images-and-linking.md": "getting-started/images-and-linking.html",
     "docs/customization/config.md": "customization/config.html",
-    "docs/customization/custom-css.md": "customization/custom-css.html",
+    "docs/customization/css.md": "customization/css.html",
     "docs/customization/plugins.md": "customization/plugins.html",
     "docs/customization/markdown.md": "customization/markdown.html",
     "docs/advanced/gh-pages.md": "advanced/gh-pages.html",
