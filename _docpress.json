@@ -62,6 +62,11 @@
                 "id": "create-your-toc"
               },
               {
+                "title": "Setting the home page",
+                "depth": 2,
+                "id": "setting-the-home-page"
+              },
+              {
                 "title": "Nesting",
                 "depth": 2,
                 "id": "nesting"
@@ -226,6 +231,11 @@
           "title": "Create your TOC",
           "depth": 2,
           "id": "create-your-toc"
+        },
+        {
+          "title": "Setting the home page",
+          "depth": 2,
+          "id": "setting-the-home-page"
         },
         {
           "title": "Nesting",

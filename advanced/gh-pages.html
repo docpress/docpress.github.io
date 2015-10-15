@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../assets/style.css?t=a93a75a7">
+    <link rel="stylesheet" href="../assets/style.css?t=b23650de">
     <link rel="stylesheet">
     <script src="../assets/script.js?t=de0b4e6d"></script>
     <title>Automating GitHub pages</title>
@@ -17,15 +17,15 @@
           </div>
         </div>
         <div class="markdown-body"><h1 id="automating-github-pages">Automating GitHub pages</h1>
-<p>You can use Travis and <a href="https://github.com/rstacruz/git-update-ghpages">git-update-ghpages</a> to automatically update your website&apos;s <code>gh-pages</code> branch.</p>
+<p>You can use Travis and <a href="https://github.com/rstacruz/git-update-ghpages">git-update-ghpages</a> to automatically update your website&#x2019;s <code>gh-pages</code> branch.</p>
 <h2 id="generate-a-github-token">Generate a GitHub token</h2>
 <p>Generate a <a href="https://github.com/settings/tokens/new">GitHub token</a>. Travis will use this to push to your repository on your behalf. You can use any name, but you can call it <em>Travis CI</em>. Keep this token somewhere safe; you can use it for any of your repositories that will need git-update-ghpages deployments.</p>
 <blockquote>
 <p><img src="https://raw.githubusercontent.com/rstacruz/git-update-ghpages/master/docs/images/github-token.png" alt=""></p>
 </blockquote>
 <h2 id="adding-your-token">Adding your token</h2>
-<p>Make sure Travis is already enabled on your repository. Go to your Travis&apos;s repo&apos;s settings page (<code>https://travis-ci.org/user/repo/settings</code>), and add your token there as <code>GITHUB_TOKEN</code>.
-Be sure to turn off the &quot;show this in build log&quot; option.</p>
+<p>Make sure Travis is already enabled on your repository. Go to your Travis&#x2019;s repo&#x2019;s settings page (<code>https://travis-ci.org/user/repo/settings</code>), and add your token there as <code>GITHUB_TOKEN</code>.
+Be sure to turn off the &#x201C;show this in build log&#x201D; option.</p>
 <blockquote>
 <p><img src="https://raw.githubusercontent.com/rstacruz/git-update-ghpages/master/docs/images/env-variables.png" alt=""></p>
 </blockquote>
@@ -36,7 +36,7 @@ Be sure to turn off the &quot;show this in build log&quot; option.</p>
 <blockquote>
 <p>If you installed Docpress locally in your project, skip to the next section.</p>
 </blockquote>
-<p>Add this to your <code>.travis.yml</code> manifest. This will make a build happen after your test, then a deployment right after that. In this example, we&apos;re deploying <code>_docs</code> to <code>user/repo</code>.</p>
+<p>Add this to your <code>.travis.yml</code> manifest. This will make a build happen after your test, then a deployment right after that. In this example, we&#x2019;re deploying <code>_docs</code> to <code>user/repo</code>.</p>
 <pre><code class="lang-yml"># .travis.yml
 node_js:
 - 4
