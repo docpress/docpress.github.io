@@ -18,10 +18,92 @@
           </div>
         </div>
         <div class="markdown-body"><h1 id="markdown-configuration">Markdown configuration</h1>
-<blockquote>
-<p>This article is a stub; you can help by expanding it.</p>
-</blockquote>
-<p>TBD</p>
+<p>You can customize how Docpress renders your Markdown content to HTML. Place your configuration inside the <code>markdown</code> setting.</p>
+<h5 class="file-heading" id="docpress.json">docpress.json</h5>
+<pre><code class="lang-js">{
+  <span class="pl-s">&quot;markdown&quot;</span>: {
+    <span class="pl-s">&quot;typographer&quot;</span>: <span class="pl-c1">true</span>
+  }
+}
+</code></pre>
+<h2 id="available-settings">Available settings</h2>
+<p>All of <a href="https://www.npmjs.com/package/markdown-it">markdown-it</a> settings are supported.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>html</code></td>
+<td><em>true</em></td>
+<td>Enable HTML tags</td>
+</tr>
+<tr>
+<td><code>xhtmlOut</code></td>
+<td><em>false</em></td>
+<td>Use <code>/</code> to close tags (<code>&lt;br /&gt;</code>)</td>
+</tr>
+<tr>
+<td><code>breaks</code></td>
+<td><em>false</em></td>
+<td>Convert new lines in paragraphs to line breaks</td>
+</tr>
+<tr>
+<td><code>langPrefix</code></td>
+<td><em>&#x201C;lang-&#x201D;</em></td>
+<td>CSS language prefix for fenced blocks</td>
+</tr>
+<tr>
+<td><code>linkify</code></td>
+<td><em>true</em></td>
+<td>Auto-convert URLs to links</td>
+</tr>
+<tr>
+<td><code>typographer</code></td>
+<td><em>true</em></td>
+<td>Replace quotes and such</td>
+</tr>
+<tr>
+<td><code>quotes</code></td>
+<td><em>&#x201C;&#x2019;&#x201C;&#x201D;&#x2018;&#x2019;&#x201D;</em></td>
+<td>Quotes to use for <code>typograher</code> setting</td>
+</tr>
+<tr>
+<td><code>highlight</code></td>
+<td><em>Function</em></td>
+<td>Syntax highlighting function (uses highlight.js by default)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="plugins">Plugins</h2>
+<p>You can also put plugins under the <code>markdown.plugins</code> option.</p>
+<h5 class="file-heading" id="docpress.json"><code>docpress.json</code></h5>
+<pre><code class="lang-js">{
+  <span class="pl-s">&quot;markdown&quot;</span>: {
+    <span class="pl-s">&quot;plugins&quot;</span>: {
+      <span class="pl-s">&quot;decorate&quot;</span>: {}
+    }
+  }
+}
+</code></pre>
+<p>The names (<code>decorate</code> in the example) correspond to an npm package prefixed by <code>markdown-it-</code>. For instance, to load the <a href="https://www.npmjs.com/package/markdown-it-emoji">markdown-it-emoji</a> plugin, use:</p>
+<pre><code class="lang-js">    <span class="pl-s">&quot;emoji&quot;</span>: {}
+</code></pre>
+<p>The value (<code>{}</code> in the example) are options to be passed onto the plugin. Use <code>{}</code> when you don&#x2019;t want to pass any options.</p>
+<h2 id="installing-markdown-plugins">Installing Markdown plugins</h2>
+<p>To use Markdown plugins, be sure to install them via npm first.</p>
+<pre><code class="lang-sh">npm init  <span class="pl-c"># if you don&apos;t have package.json</span>
+npm install --save --save-exact markdown-it-emoji
+</code></pre>
+<h2 id="bundled-markdown-plugins">Bundled Markdown plugins</h2>
+<p>Some officially-endorsed plugins are bundled into <code>docpress-core</code> already. You can use them without installing via npm.</p>
+<ul>
+<li><code>decorate</code> (<a href="https://www.npmjs.com/package/markdown-it-decorate">markdown-it-decorate</a>) &#x2013; Enables custom class names</li>
+</ul>
 
         </div>
         <div class="footer-nav">
@@ -53,6 +135,16 @@
                 <li class="menu-item -level-2"><a href="../customization/plugins.html" class="link title  link-customizationplugins">Using plugins</a>
                 </li>
                 <li class="menu-item -level-2"><a href="../customization/markdown.html" class="link title -active link-customizationmarkdown">Markdown configuration</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a href="#available-settings" class="hlink link-available-settings">Available settings</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#plugins" class="hlink link-plugins">Plugins</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#installing-markdown-plugins" class="hlink link-installing-markdown-plugins">Installing Markdown plugins</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a href="#bundled-markdown-plugins" class="hlink link-bundled-markdown-plugins">Bundled Markdown plugins</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>

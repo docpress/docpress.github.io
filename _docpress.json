@@ -118,7 +118,29 @@
             "title": "Markdown configuration",
             "source": "docs/customization/markdown.md",
             "url": "customization/markdown.html",
-            "slug": "customizationmarkdown"
+            "slug": "customizationmarkdown",
+            "headings": [
+              {
+                "title": "Available settings",
+                "depth": 2,
+                "id": "available-settings"
+              },
+              {
+                "title": "Plugins",
+                "depth": 2,
+                "id": "plugins"
+              },
+              {
+                "title": "Installing Markdown plugins",
+                "depth": 2,
+                "id": "installing-markdown-plugins"
+              },
+              {
+                "title": "Bundled Markdown plugins",
+                "depth": 2,
+                "id": "bundled-markdown-plugins"
+              }
+            ]
           }
         ]
       },
@@ -272,7 +294,29 @@
     "customization/markdown.html": {
       "source": "docs/customization/markdown.md",
       "title": "Markdown configuration",
-      "slug": "customizationmarkdown"
+      "slug": "customizationmarkdown",
+      "headings": [
+        {
+          "title": "Available settings",
+          "depth": 2,
+          "id": "available-settings"
+        },
+        {
+          "title": "Plugins",
+          "depth": 2,
+          "id": "plugins"
+        },
+        {
+          "title": "Installing Markdown plugins",
+          "depth": 2,
+          "id": "installing-markdown-plugins"
+        },
+        {
+          "title": "Bundled Markdown plugins",
+          "depth": 2,
+          "id": "bundled-markdown-plugins"
+        }
+      ]
     },
     "advanced/gh-pages.html": {
       "source": "docs/advanced/gh-pages.md",
