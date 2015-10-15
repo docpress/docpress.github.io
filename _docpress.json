@@ -106,14 +106,7 @@
             "title": "Custom CSS",
             "source": "docs/customization/custom-css.md",
             "url": "customization/custom-css.html",
-            "slug": "customizationcustom-css",
-            "headings": [
-              {
-                "title": "Customizing variables",
-                "depth": 2,
-                "id": "customizing-variables"
-              }
-            ]
+            "slug": "customizationcustom-css"
           },
           {
             "title": "Using plugins",
@@ -269,14 +262,7 @@
     "customization/custom-css.html": {
       "source": "docs/customization/custom-css.md",
       "title": "Custom CSS",
-      "slug": "customizationcustom-css",
-      "headings": [
-        {
-          "title": "Customizing variables",
-          "depth": 2,
-          "id": "customizing-variables"
-        }
-      ]
+      "slug": "customizationcustom-css"
     },
     "customization/plugins.html": {
       "source": "docs/customization/plugins.md",

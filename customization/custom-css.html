@@ -17,14 +17,19 @@
           </div>
         </div>
         <div class="markdown-body"><h1 id="custom-css">Custom CSS</h1>
+<p>Put your extra CSS files inside the <code>css</code> setting. You can put external files (hosted online), Stylus files (ends in <code>.styl</code>), or local CSS files. For Stylus files and local CSS files, they need to be inside <code>docs/</code>.</p>
+<h5 class="file-heading" id="docpress.json">docpress.json</h5>
+<pre><code class="lang-json">{
+  &quot;<span class="pl-e">css</span>&quot;: <span class="pl-s">[
+    <span class="pl-s">&quot;http://site.com/external.css&quot;</span>,
+    <span class="pl-s">&quot;docs/style.styl&quot;</span>,
+    <span class="pl-s">&quot;docs/extra.css&quot;</span>
+  ]
+</span>}
+</code></pre>
 <blockquote>
 <p>This article is a stub; you can help by expanding it.</p>
 </blockquote>
-<p>Create a file called <code>docs/assets/custom.scss</code> in your project. If you prefer Sass&#x2019;s indented syntax, use <code>.sass</code> as an extension.</p>
-<h2 id="customizing-variables">Customizing variables</h2>
-<p>Create a file called <code>docs/assets/variables.scss</code> in your project. This allows you to change variables.</p>
-<pre><code class="lang-scss"><span class="hljs-variable">$accent</span><span class="pl-s">: <span class="hljs-hexcolor">#129</span>;</span>
-</code></pre>
 
         </div>
         <div class="footer-nav">
@@ -52,10 +57,6 @@
                 <li class="menu-item -level-2"><a href="../customization/config.html" class="link title  link-customizationconfig">Configuration</a>
                 </li>
                 <li class="menu-item -level-2"><a href="../customization/custom-css.html" class="link title -active link-customizationcustom-css">Custom CSS</a>
-                  <ul class="headings heading-list">
-                    <li class="heading-item -depth-2"><a href="#customizing-variables" class="hlink link-customizing-variables">Customizing variables</a>
-                    </li>
-                  </ul>
                 </li>
                 <li class="menu-item -level-2"><a href="../customization/plugins.html" class="link title  link-customizationplugins">Using plugins</a>
                 </li>
