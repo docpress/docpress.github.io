@@ -370,6 +370,6 @@
     "docs/advanced/gh-pages.md": "advanced/gh-pages.html",
     "docs/advanced/hacking.md": "advanced/hacking.html",
     "docs/docpress.json": "docpress.json",
-    "docs/assets/custom.styl": "assets/custom.styl"
+    "docs/assets/custom.css": "assets/custom.css"
   }
 }

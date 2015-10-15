@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../assets/style.css?t=6e304cb6">
+    <link rel="stylesheet" href="../assets/style.css?t=a157e8bd">
     <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
+    <link rel="stylesheet" href="../assets/custom.css">
     <script src="../assets/script.js?t=6ab408ed"></script>
     <title>Markdown configuration</title>
     <meta name="viewport" content="width=device-width">
@@ -19,7 +20,7 @@
         </div>
         <div class="markdown-body"><h1 id="markdown-configuration">Markdown configuration</h1>
 <p>You can customize how Docpress renders your Markdown content to HTML. Place your configuration inside the <code>markdown</code> setting.</p>
-<h5 class="file-heading" id="docpress.json">docpress.json</h5>
+<h5 class="file-heading" id="docpress.json"><code>docpress.json</code></h5>
 <pre><code class="lang-js">{
   <span class="pl-s">&quot;markdown&quot;</span>: {
     <span class="pl-s">&quot;typographer&quot;</span>: <span class="pl-c1">true</span>
@@ -69,7 +70,7 @@
 </tr>
 <tr>
 <td><code>quotes</code></td>
-<td><em>&#x201C;&#x2019;&#x201C;&#x201D;&#x2018;&#x2019;&#x201D;</em></td>
+<td><em>&apos;&#x201C;&#x201D;&#x2018;&#x2019;</em></td>
 <td>Quotes to use for <code>typograher</code> setting</td>
 </tr>
 <tr>
@@ -91,7 +92,7 @@
 }
 </code></pre>
 <p>The names (<code>decorate</code> in the example) correspond to an npm package prefixed by <code>markdown-it-</code>. For instance, to load the <a href="https://www.npmjs.com/package/markdown-it-emoji">markdown-it-emoji</a> plugin, use:</p>
-<pre><code class="lang-js">    <span class="pl-s">&quot;emoji&quot;</span>: {}
+<pre><code class="lang-js"><span class="pl-s">&quot;emoji&quot;</span>: {}
 </code></pre>
 <p>The value (<code>{}</code> in the example) are options to be passed onto the plugin. Use <code>{}</code> when you don&#x2019;t want to pass any options.</p>
 <h2 id="installing-markdown-plugins">Installing Markdown plugins</h2>
@@ -102,7 +103,7 @@ npm install --save --save-exact markdown-it-emoji
 <h2 id="bundled-markdown-plugins">Bundled Markdown plugins</h2>
 <p>Some officially-endorsed plugins are bundled into <code>docpress-core</code> already. You can use them without installing via npm.</p>
 <ul>
-<li><code>decorate</code> (<a href="https://www.npmjs.com/package/markdown-it-decorate">markdown-it-decorate</a>) &#x2013; Enables custom class names</li>
+<li><strong>decorate</strong> (<a href="https://www.npmjs.com/package/markdown-it-decorate">markdown-it-decorate</a>) &#x2013; Enables custom class names.</li>
 </ul>
 
         </div>
