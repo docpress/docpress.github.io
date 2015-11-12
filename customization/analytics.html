@@ -7,28 +7,34 @@
     <link rel="stylesheet" href="../assets/custom.css?t=202a34cf">
     <script src="../assets/search.js?t=bbb1b0a8"></script>
     <script src="../assets/script.js?t=74596582"></script>
-    <title>Using plugins</title>
+    <title>Google Analytics</title>
     <meta name="viewport" content="width=device-width">
   </head>
   <body class="-menu-visible">
     <div class="doc-layout">
       <div class="toggle menu-toggle js-menu-toggle"></div>
-      <div class="body page-customizationplugins">
+      <div class="body page-customizationanalytics">
         <div class="header-nav">
           <div class="right"><a href="https://github.com/docpress/docpress" data-title="docpress/docpress" class="iconlink">
               <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
           </div>
         </div>
-        <div class="markdown-body"><h1 id="plugins">Plugins</h1>
-<blockquote>
-<p>This article is a stub; you can help by expanding it.</p>
-</blockquote>
-<p>TBD</p>
+        <div class="markdown-body"><h1 id="google-analytics">Google Analytics</h1>
+<p>Enable <a href="https://google.com/analytics">Google Analytics</a> tracking in your docpress site by adding the <code>googleAnalytics</code> configuration key in <code>docpress.json</code>.</p>
+<h5 class="file-heading" id="docpress.json"><code>docpress.json</code></h5>
+<pre><code class="lang-json">{
+  &quot;<span class="pl-e">googleAnalytics</span>&quot;: <span class="pl-s">{
+    &quot;<span class="pl-e">id</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;UA-12345678-1&quot;</span></span>,
+    &quot;<span class="pl-e">domain</span>&quot;: <span class="pl-s"><span class="pl-s">&quot;docpress.github.io&quot;</span>
+  </span>}
+</span>}
+</code></pre>
+<p>The <code>id</code> is the tracking ID given by Google Analytics. The <code>domain</code> is optional, but if enabled, the analytics code will only be used in this domain; this prevents pageviews from being logged when viewing your site in your local development machine.</p>
 
         </div>
         <div class="footer-nav">
-          <div class="left"><a href="../customization/css.html"><span class="title">Custom CSS</span></a></div>
-          <div class="right"><a href="../customization/markdown.html"><span class="label">Next: </span><span class="title">Markdown configuration</span></a></div>
+          <div class="left"><a href="../customization/markdown.html"><span class="title">Markdown configuration</span></a></div>
+          <div class="right"><a href="../advanced/gh-pages.html"><span class="label">Next: </span><span class="title">Automating GitHub pages</span></a></div>
         </div>
       </div>
       <div class="menu toc-menu">
@@ -52,11 +58,11 @@
                 </li>
                 <li class="menu-item -level-2"><a href="../customization/css.html" class="link title  link-customizationcss">Custom CSS</a>
                 </li>
-                <li class="menu-item -level-2"><a href="../customization/plugins.html" class="link title -active link-customizationplugins">Using plugins</a>
+                <li class="menu-item -level-2"><a href="../customization/plugins.html" class="link title  link-customizationplugins">Using plugins</a>
                 </li>
                 <li class="menu-item -level-2"><a href="../customization/markdown.html" class="link title  link-customizationmarkdown">Markdown configuration</a>
                 </li>
-                <li class="menu-item -level-2"><a href="../customization/analytics.html" class="link title  link-customizationanalytics">Google Analytics</a>
+                <li class="menu-item -level-2"><a href="../customization/analytics.html" class="link title -active link-customizationanalytics">Google Analytics</a>
                 </li>
               </ul>
             </li>
