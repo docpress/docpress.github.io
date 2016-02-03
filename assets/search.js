@@ -165,7 +165,7 @@ window.__searchindex=({
     "title": "Plugins",
     "pagetitle": "Markdown configuration",
     "slug": "customization/markdown.html#plugins",
-    "body": "You can also put Markdown-it plugins under the markdown.plugins option. These will allow you to customize Markdown parsing behavior through npm packages; search npm for \"markdown-it\" to see available plugins."
+    "body": "You can also put Markdown-it plugins under the markdown.plugins option. These will allow you to customize Markdown parsing behavior through npm packages; search npm for “markdown-it” to see available plugins."
   },
   "customization/markdown.html#installing-markdown-plugins": {
     "title": "Installing Markdown plugins",

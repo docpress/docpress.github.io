@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../assets/style.css?t=a44c9e9d">
     <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
     <link rel="stylesheet" href="../assets/custom.css?t=202a34cf">
-    <script src="../assets/search.js?t=75d628af"></script>
+    <script src="../assets/search.js?t=6ad12645"></script>
     <script src="../assets/script.js?t=2bcc4b59"></script>
     <title>Writing more pages</title>
     <meta name="viewport" content="width=device-width">
@@ -30,38 +30,38 @@
 <h2 id="create-your-toc">Create your TOC</h2>
 <p>Create a table of contents as <code>docs/README.md</code>. This is the table of contents: an unordered list of pages to link. Here&#x2019;s an example that will only have one file (your main README).</p>
 <h5 class="file-heading" id="docsreadme.md">docs/README.md</h5>
-<pre><code class="lang-md"><span class="hljs-header">Documentation
+<pre><code class="lang-md"><span class="hljs-section">Documentation
 =============</span>
 
-<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Your project</span>](<span class="hljs-link_url">../README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="pl-s">Your project</span>](<span class="hljs-link">../README.md</span>)
 </code></pre>
 <h2 id="setting-the-home-page">Setting the home page</h2>
 <p>The first file in the TOC is <em>always</em> going to be the home page. Its title in the TOC is used as the site&#x2019;s main title.</p>
 <h2 id="nesting">Nesting</h2>
 <p>To organize your pages into chapters, you can create sub-lists by indenting items that are under a certain parent. You can nest as far as you want, but it&#x2019;s only recommended to nest just one level down.</p>
 <h5 id="docsreadme.md"><code>docs/README.md</code></h5>
-<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="hljs-link_label">Your project</span>](<span class="hljs-link_url">../README.md</span>)
-<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Introduction</span>](<span class="hljs-link_url">intro/README.md</span>)
-  * [<span class="hljs-link_label">Getting started</span>](<span class="hljs-link_url">intro/getting-started.md</span>)
-  * [<span class="hljs-link_label">Installation</span>](<span class="hljs-link_url">intro/install.md</span>)
-<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Installation</span>](<span class="hljs-link_url">installation/README.md</span>)
-  * [<span class="hljs-link_label">Mac OS X</span>](<span class="hljs-link_url">installation/osx.md</span>)
-  * [<span class="hljs-link_label">Windows</span>](<span class="hljs-link_url">installation/windows.md</span>)
+<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="pl-s">Your project</span>](<span class="hljs-link">../README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="pl-s">Introduction</span>](<span class="hljs-link">intro/README.md</span>)
+  * [<span class="pl-s">Getting started</span>](<span class="hljs-link">intro/getting-started.md</span>)
+  * [<span class="pl-s">Installation</span>](<span class="hljs-link">intro/install.md</span>)
+<span class="hljs-bullet">* </span>[<span class="pl-s">Installation</span>](<span class="hljs-link">installation/README.md</span>)
+  * [<span class="pl-s">Mac OS X</span>](<span class="hljs-link">installation/osx.md</span>)
+  * [<span class="pl-s">Windows</span>](<span class="hljs-link">installation/windows.md</span>)
 </code></pre>
 <h4 id="non-links">Non-links</h4>
 <p>You don&#x2019;t need to link all pages&#x2014;you can create items that are not links. Great for headings or for pages that are yet to be written.</p>
-<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="hljs-link_label">Your project</span>](<span class="hljs-link_url">../README.md</span>)
+<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="pl-s">Your project</span>](<span class="hljs-link">../README.md</span>)
 <span class="hljs-bullet">* </span>Introduction
-  * [<span class="hljs-link_label">Getting started</span>](<span class="hljs-link_url">intro/getting-started.md</span>)
-  * [<span class="hljs-link_label">Installation</span>](<span class="hljs-link_url">intro/install.md</span>)
+  * [<span class="pl-s">Getting started</span>](<span class="hljs-link">intro/getting-started.md</span>)
+  * [<span class="pl-s">Installation</span>](<span class="hljs-link">intro/install.md</span>)
 <span class="hljs-bullet">* </span>Installation
-  * [<span class="hljs-link_label">Mac OS X</span>](<span class="hljs-link_url">installation/osx.md</span>)
-  * [<span class="hljs-link_label">Windows</span>](<span class="hljs-link_url">installation/windows.md</span>)
+  * [<span class="pl-s">Mac OS X</span>](<span class="hljs-link">installation/osx.md</span>)
+  * [<span class="pl-s">Windows</span>](<span class="hljs-link">installation/windows.md</span>)
 </code></pre>
 <h4 id="relative-and-absolute-paths">Relative and absolute paths</h4>
 <p>Links in the TOC can be relative or absolute. In this example, both links are equivalent.</p>
-<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="hljs-link_label">Your project</span>](<span class="hljs-link_url">../README.md</span>)
-<span class="hljs-bullet">* </span>[<span class="hljs-link_label">Your project</span>](<span class="hljs-link_url">/README.md</span>)
+<pre><code class="lang-md"><span class="hljs-bullet">* </span>[<span class="pl-s">Your project</span>](<span class="hljs-link">../README.md</span>)
+<span class="hljs-bullet">* </span>[<span class="pl-s">Your project</span>](<span class="hljs-link">/README.md</span>)
 </code></pre>
 <p class="pull-box">Your Docpress site is growing! Why not add some images?
 <a href="images-and-linking.html">Continue &#x2192;</a></p>
