@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="../assets/style.css?t=a44c9e9d">
     <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
     <link rel="stylesheet" href="../assets/custom.css?t=202a34cf">
-    <script src="../assets/search.js?t=620c946e"></script>
     <script src="../assets/script.js?t=820b7ffa"></script>
     <title>Hacking Docpress</title>
     <meta name="viewport" content="width=device-width">
@@ -40,20 +39,17 @@ cd ~/Projects/docpress
 <pre><code class="lang-sh">git <span class="pl-c1">clone</span> http://github.com/docpress/docpress.git
 git <span class="pl-c1">clone</span> http://github.com/docpress/docpress-base.git
 git <span class="pl-c1">clone</span> http://github.com/docpress/docpress-core.git
-git <span class="pl-c1">clone</span> http://github.com/docpress/docpress-search.git
 </code></pre>
 <h4 id="link-them-all">Link them all</h4>
 <p>Use <code>npm link</code> so you can use them as local development copies.</p>
 <pre><code class="lang-sh">(<span class="pl-c1">cd</span> docpress &amp;&amp; npm link)
 (<span class="pl-c1">cd</span> docpress-base &amp;&amp; npm link)
 (<span class="pl-c1">cd</span> docpress-core &amp;&amp; npm link)
-(<span class="pl-c1">cd</span> docpress-search &amp;&amp; npm link)
 </code></pre>
 <h4 id="use-the-links">Use the links</h4>
 <p>Use the linked development copies.</p>
 <pre><code class="lang-sh">(<span class="pl-c1">cd</span> docpress &amp;&amp; npm i &amp;&amp; npm link docpress-base &amp;&amp; npm link docpress-core)
 (<span class="pl-c1">cd</span> docpress-base &amp;&amp; npm i &amp;&amp; npm link npm link docpress-core)
-(<span class="pl-c1">cd</span> docpress-search &amp;&amp; npm i &amp;&amp; npm link npm link docpress-core)
 </code></pre>
 
         </div>
