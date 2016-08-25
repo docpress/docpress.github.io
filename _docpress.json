@@ -119,6 +119,12 @@
             "slug": "customizationcss"
           },
           {
+            "title": "Custom Scripts",
+            "source": "docs/customization/scripts.md",
+            "url": "customization/scripts.html",
+            "slug": "customizationscripts"
+          },
+          {
             "title": "Using plugins",
             "source": "docs/customization/plugins.md",
             "url": "customization/plugins.html",
@@ -317,6 +323,11 @@
       "title": "Custom CSS",
       "slug": "customizationcss"
     },
+    "customization/scripts.html": {
+      "source": "docs/customization/scripts.md",
+      "title": "Custom Scripts",
+      "slug": "customizationscripts"
+    },
     "customization/plugins.html": {
       "source": "docs/customization/plugins.md",
       "title": "Using plugins",
@@ -406,6 +417,7 @@
     "docs/getting-started/images-and-linking.md": "getting-started/images-and-linking.html",
     "docs/customization/config.md": "customization/config.html",
     "docs/customization/css.md": "customization/css.html",
+    "docs/customization/scripts.md": "customization/scripts.html",
     "docs/customization/plugins.md": "customization/plugins.html",
     "docs/customization/markdown.md": "customization/markdown.html",
     "docs/customization/analytics.md": "customization/analytics.html",
