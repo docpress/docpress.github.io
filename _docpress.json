@@ -40,6 +40,24 @@
         ]
       },
       {
+        "title": "Showcase",
+        "source": "docs/showcase.md",
+        "url": "showcase.html",
+        "slug": "showcase",
+        "headings": [
+          {
+            "title": "Project sites",
+            "depth": 2,
+            "id": "project-sites"
+          },
+          {
+            "title": "Books and manuals",
+            "depth": 2,
+            "id": "books-and-manuals"
+          }
+        ]
+      },
+      {
         "title": "Getting started",
         "sections": [
           {
@@ -262,6 +280,23 @@
         }
       ]
     },
+    "showcase.html": {
+      "source": "docs/showcase.md",
+      "title": "Showcase",
+      "slug": "showcase",
+      "headings": [
+        {
+          "title": "Project sites",
+          "depth": 2,
+          "id": "project-sites"
+        },
+        {
+          "title": "Books and manuals",
+          "depth": 2,
+          "id": "books-and-manuals"
+        }
+      ]
+    },
     "getting-started/quickstart.html": {
       "source": "docs/getting-started/quickstart.md",
       "title": "Quick-start guide",
@@ -422,6 +457,7 @@
   },
   "sources": {
     "README.md": "index.html",
+    "docs/showcase.md": "showcase.html",
     "docs/getting-started/quickstart.md": "getting-started/quickstart.html",
     "docs/getting-started/more-pages.md": "getting-started/more-pages.html",
     "docs/getting-started/images-and-linking.md": "getting-started/images-and-linking.html",
