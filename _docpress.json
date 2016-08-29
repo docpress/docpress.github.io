@@ -28,6 +28,11 @@
             "id": "usage"
           },
           {
+            "title": "Support",
+            "depth": 2,
+            "id": "support"
+          },
+          {
             "title": "Thanks",
             "depth": 2,
             "id": "thanks"
@@ -244,6 +249,11 @@
           "title": "Usage",
           "depth": 2,
           "id": "usage"
+        },
+        {
+          "title": "Support",
+          "depth": 2,
+          "id": "support"
         },
         {
           "title": "Thanks",
