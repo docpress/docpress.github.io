@@ -186,6 +186,12 @@
             "source": "docs/customization/analytics.md",
             "url": "customization/analytics.html",
             "slug": "customizationanalytics"
+          },
+          {
+            "title": "Disqus",
+            "source": "docs/customization/disqus.md",
+            "url": "customization/disqus.html",
+            "slug": "customizationdisqus"
           }
         ]
       },
@@ -421,6 +427,12 @@
       "pageTitle": "Google Analytics",
       "slug": "customizationanalytics"
     },
+    "customization/disqus.html": {
+      "source": "docs/customization/disqus.md",
+      "title": "Disqus - docpress",
+      "pageTitle": "Disqus",
+      "slug": "customizationdisqus"
+    },
     "advanced/gh-pages.html": {
       "source": "docs/advanced/gh-pages.md",
       "title": "Automating GitHub pages - docpress",
@@ -480,6 +492,7 @@
     "docs/customization/plugins.md": "customization/plugins.html",
     "docs/customization/markdown.md": "customization/markdown.html",
     "docs/customization/analytics.md": "customization/analytics.html",
+    "docs/customization/disqus.md": "customization/disqus.html",
     "docs/advanced/gh-pages.md": "advanced/gh-pages.html",
     "docs/advanced/hacking.md": "advanced/hacking.html",
     "docs/docpress.json": "docpress.json",
