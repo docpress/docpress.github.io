@@ -246,6 +246,7 @@
     "index.html": {
       "source": "README.md",
       "title": "docpress",
+      "pageTitle": "docpress",
       "slug": "index",
       "headings": [
         {
@@ -282,7 +283,8 @@
     },
     "showcase.html": {
       "source": "docs/showcase.md",
-      "title": "Showcase",
+      "title": "Showcase - docpress",
+      "pageTitle": "Showcase",
       "slug": "showcase",
       "headings": [
         {
@@ -299,7 +301,8 @@
     },
     "getting-started/quickstart.html": {
       "source": "docs/getting-started/quickstart.md",
-      "title": "Quick-start guide",
+      "title": "Quick-start guide - docpress",
+      "pageTitle": "Quick-start guide",
       "slug": "getting-startedquickstart",
       "headings": [
         {
@@ -321,7 +324,8 @@
     },
     "getting-started/more-pages.html": {
       "source": "docs/getting-started/more-pages.md",
-      "title": "Writing more pages",
+      "title": "Writing more pages - docpress",
+      "pageTitle": "Writing more pages",
       "slug": "getting-startedmore-pages",
       "headings": [
         {
@@ -343,12 +347,14 @@
     },
     "getting-started/images-and-linking.html": {
       "source": "docs/getting-started/images-and-linking.md",
-      "title": "Images and linking",
+      "title": "Images and linking - docpress",
+      "pageTitle": "Images and linking",
       "slug": "getting-startedimages-and-linking"
     },
     "customization/config.html": {
       "source": "docs/customization/config.md",
-      "title": "Configuration",
+      "title": "Configuration - docpress",
+      "pageTitle": "Configuration",
       "slug": "customizationconfig",
       "headings": [
         {
@@ -365,22 +371,26 @@
     },
     "customization/css.html": {
       "source": "docs/customization/css.md",
-      "title": "Custom CSS",
+      "title": "Custom CSS - docpress",
+      "pageTitle": "Custom CSS",
       "slug": "customizationcss"
     },
     "customization/scripts.html": {
       "source": "docs/customization/scripts.md",
-      "title": "Custom Scripts",
+      "title": "Custom Scripts - docpress",
+      "pageTitle": "Custom Scripts",
       "slug": "customizationscripts"
     },
     "customization/plugins.html": {
       "source": "docs/customization/plugins.md",
-      "title": "Using plugins",
+      "title": "Using plugins - docpress",
+      "pageTitle": "Using plugins",
       "slug": "customizationplugins"
     },
     "customization/markdown.html": {
       "source": "docs/customization/markdown.md",
-      "title": "Markdown configuration",
+      "title": "Markdown configuration - docpress",
+      "pageTitle": "Markdown configuration",
       "slug": "customizationmarkdown",
       "headings": [
         {
@@ -407,12 +417,14 @@
     },
     "customization/analytics.html": {
       "source": "docs/customization/analytics.md",
-      "title": "Google Analytics",
+      "title": "Google Analytics - docpress",
+      "pageTitle": "Google Analytics",
       "slug": "customizationanalytics"
     },
     "advanced/gh-pages.html": {
       "source": "docs/advanced/gh-pages.md",
-      "title": "Automating GitHub pages",
+      "title": "Automating GitHub pages - docpress",
+      "pageTitle": "Automating GitHub pages",
       "slug": "advancedgh-pages",
       "headings": [
         {
@@ -444,7 +456,8 @@
     },
     "advanced/hacking.html": {
       "source": "docs/advanced/hacking.md",
-      "title": "Hacking Docpress",
+      "title": "Hacking Docpress - docpress",
+      "pageTitle": "Hacking Docpress",
       "slug": "advancedhacking",
       "headings": [
         {
