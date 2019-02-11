@@ -103,23 +103,23 @@ Be sure to turn off the &#x201C;show this in build log&#x201D; option.</p>
 </blockquote>
 <p>Add this to your <code>.travis.yml</code> manifest. This will make a build happen after your test, then a deployment right after that. In this example, we&#x2019;re deploying <code>_docs</code> to <code>user/repo</code>.</p>
 <h5 class="file-heading" id=".travis.yml">.travis.yml</h5>
-<pre><code class="lang-yml"><span class="hljs-attr">language:</span> node_js
+<pre><code class="lang-yml"><span class="hljs-attr">language:</span> <span class="pl-s">node_js</span>
 <span class="hljs-attr">node_js:</span>
 <span class="hljs-bullet">-</span> <span class="hljs-number">4</span>
 
 <span class="hljs-attr">env:</span>
 <span class="hljs-attr">  global:</span>
-<span class="hljs-attr">    - GIT_NAME:</span> Travis CI
-<span class="hljs-attr">    - GIT_EMAIL:</span> nobody@nobody.org
-<span class="hljs-attr">    - GITHUB_REPO:</span> rstacruz/myproject
-<span class="hljs-attr">    - GIT_SOURCE:</span> _docpress
+<span class="hljs-attr">    - GIT_NAME:</span> <span class="pl-s">Travis</span> <span class="pl-s">CI</span>
+<span class="hljs-attr">    - GIT_EMAIL:</span> <span class="pl-s">nobody@nobody.org</span>
+<span class="hljs-attr">    - GITHUB_REPO:</span> <span class="pl-s">rstacruz/myproject</span>
+<span class="hljs-attr">    - GIT_SOURCE:</span> <span class="pl-s">_docpress</span>
 
 <span class="hljs-attr">script:</span>
-<span class="hljs-bullet">-</span> rake     <span class="pl-c"># ...or whatever your test command is</span>
-<span class="hljs-bullet">-</span> npm install docpress &amp;&amp; ./node_modules/.bin/docpress build
+<span class="hljs-bullet">-</span> <span class="pl-s">rake</span>     <span class="pl-c"># ...or whatever your test command is</span>
+<span class="hljs-bullet">-</span> <span class="pl-s">npm</span> <span class="pl-s">install</span> <span class="pl-s">docpress</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">./node_modules/.bin/docpress</span> <span class="pl-s">build</span>
 
 <span class="hljs-attr">after_success:</span>
-<span class="hljs-bullet">-</span> if [ <span class="pl-s">&quot;$TRAVIS_BRANCH&quot;</span> = <span class="pl-s">&quot;master&quot;</span> -a <span class="pl-s">&quot;$TRAVIS_PULL_REQUEST&quot;</span> = <span class="pl-s">&quot;false&quot;</span> ]; then npm install git-update-ghpages &amp;&amp; ./node_modules/.bin/git-update-ghpages -e; fi
+<span class="hljs-bullet">-</span> <span class="pl-s">if</span> <span class="pl-s">[</span> <span class="pl-s">&quot;$TRAVIS_BRANCH&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;master&quot;</span> <span class="hljs-bullet">-a</span> <span class="pl-s">&quot;$TRAVIS_PULL_REQUEST&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;false&quot;</span> <span class="pl-s">];</span> <span class="pl-s">then</span> <span class="pl-s">npm</span> <span class="pl-s">install</span> <span class="pl-s">git-update-ghpages</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">./node_modules/.bin/git-update-ghpages</span> <span class="hljs-bullet">-e;</span> <span class="pl-s">fi</span>
 </code></pre>
 <h2 id="for-node.js-projects">For Node.js projects</h2>
 <p>If your project is a Node.js project, you can simplify this by adding <code>docpress</code> and <code>git-update-ghpages</code> to your <em>devDependencies</em>.</p>
@@ -132,17 +132,17 @@ npm install --save-dev --save-exact git-update-ghpages
 
 <span class="hljs-attr">env:</span>
 <span class="hljs-attr">  global:</span>
-<span class="hljs-attr">    - GIT_NAME:</span> Travis CI
-<span class="hljs-attr">    - GIT_EMAIL:</span> nobody@nobody.org
-<span class="hljs-attr">    - GITHUB_REPO:</span> rstacruz/myproject
-<span class="hljs-attr">    - GIT_SOURCE:</span> _docpress
+<span class="hljs-attr">    - GIT_NAME:</span> <span class="pl-s">Travis</span> <span class="pl-s">CI</span>
+<span class="hljs-attr">    - GIT_EMAIL:</span> <span class="pl-s">nobody@nobody.org</span>
+<span class="hljs-attr">    - GITHUB_REPO:</span> <span class="pl-s">rstacruz/myproject</span>
+<span class="hljs-attr">    - GIT_SOURCE:</span> <span class="pl-s">_docpress</span>
 
 <span class="hljs-attr">script:</span>
-<span class="hljs-bullet">-</span> rake     <span class="pl-c"># ...or whatever your test command is</span>
-<span class="hljs-bullet">-</span> ./node_modules/.bin/docpress build
+<span class="hljs-bullet">-</span> <span class="pl-s">rake</span>     <span class="pl-c"># ...or whatever your test command is</span>
+<span class="hljs-bullet">-</span> <span class="pl-s">./node_modules/.bin/docpress</span> <span class="pl-s">build</span>
 
 <span class="hljs-attr">after_success:</span>
-<span class="hljs-bullet">-</span> if [ <span class="pl-s">&quot;$TRAVIS_BRANCH&quot;</span> = <span class="pl-s">&quot;master&quot;</span> -a <span class="pl-s">&quot;$TRAVIS_PULL_REQUEST&quot;</span> = <span class="pl-s">&quot;false&quot;</span> ]; then ./node_modules/.bin/git-update-ghpages -e; fi
+<span class="hljs-bullet">-</span> <span class="pl-s">if</span> <span class="pl-s">[</span> <span class="pl-s">&quot;$TRAVIS_BRANCH&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;master&quot;</span> <span class="hljs-bullet">-a</span> <span class="pl-s">&quot;$TRAVIS_PULL_REQUEST&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;false&quot;</span> <span class="pl-s">];</span> <span class="pl-s">then</span> <span class="pl-s">./node_modules/.bin/git-update-ghpages</span> <span class="hljs-bullet">-e;</span> <span class="pl-s">fi</span>
 </code></pre>
 <h2 id="for-non-js-projects">For non-JS projects</h2>
 <p>The configuration above has <code>language: node_js</code>, which may not be what you want. In this case, swap out the <code>language</code> and <code>node_js</code> fields to invoke nvm <code>before_install</code>:</p>
