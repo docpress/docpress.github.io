@@ -88,13 +88,13 @@
 <h2 id="generate-a-github-token">Generate a GitHub token</h2>
 <p>Generate a <a href="https://github.com/settings/tokens/new">GitHub token</a>. Travis will use this to push to your repository on your behalf. You can use any name, but you can call it <em>Travis CI</em>. Keep this token somewhere safe; you can use it for any of your repositories that will need git-update-ghpages deployments.</p>
 <blockquote>
-<p><img src="https://raw.githubusercontent.com/rstacruz/git-update-ghpages/master/docs/images/github-token.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/rstacruz/git-update-ghpages/master/docs/images/github-token.png" alt></p>
 </blockquote>
 <h2 id="adding-your-token">Adding your token</h2>
 <p>Make sure Travis is already enabled on your repository. Go to your Travis&#x2019;s repo&#x2019;s settings page (<code>https://travis-ci.org/user/repo/settings</code>), and add your token there as <code>GITHUB_TOKEN</code>.
 Be sure to turn off the &#x201C;show this in build log&#x201D; option.</p>
 <blockquote>
-<p><img src="https://raw.githubusercontent.com/rstacruz/git-update-ghpages/master/docs/images/env-variables.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/rstacruz/git-update-ghpages/master/docs/images/env-variables.png" alt></p>
 </blockquote>
 <p>Alternatively, you can also use the <a href="http://rubygems.org/gems/travis">Travis CLI tool</a> to add this to your repo as a secure variable:</p>
 <pre><code class="lang-sh">travis encrypt GITHUB_TOKEN=<span class="pl-s">&quot;your token here&quot;</span> --add
