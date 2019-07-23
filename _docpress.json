@@ -80,6 +80,11 @@
                 "title": "Previewing your site",
                 "depth": 2,
                 "id": "previewing-your-site"
+              },
+              {
+                "title": "Building your site",
+                "depth": 2,
+                "id": "building-your-site"
               }
             ]
           },
@@ -325,6 +330,11 @@
           "title": "Previewing your site",
           "depth": 2,
           "id": "previewing-your-site"
+        },
+        {
+          "title": "Building your site",
+          "depth": 2,
+          "id": "building-your-site"
         }
       ]
     },
