@@ -88,13 +88,13 @@
 <h2 id="generate-a-github-token">Generate a GitHub token</h2>
 <p>Generate a <a href="https://github.com/settings/tokens/new">GitHub token</a>. Travis will use this to push to your repository on your behalf. You can use any name, but you can call it <em>Travis CI</em>. Keep this token somewhere safe; you can use it for any of your repositories that will need git-update-ghpages deployments.</p>
 <blockquote>
-<p><img src="https://raw.githubusercontent.com/rstacruz/git-update-ghpages/master/docs/images/github-token.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/rstacruz/git-update-ghpages/master/docs/images/github-token.png" alt></p>
 </blockquote>
 <h2 id="adding-your-token">Adding your token</h2>
 <p>Make sure Travis is already enabled on your repository. Go to your Travis&#x2019;s repo&#x2019;s settings page (<code>https://travis-ci.org/user/repo/settings</code>), and add your token there as <code>GITHUB_TOKEN</code>.
 Be sure to turn off the &#x201C;show this in build log&#x201D; option.</p>
 <blockquote>
-<p><img src="https://raw.githubusercontent.com/rstacruz/git-update-ghpages/master/docs/images/env-variables.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/rstacruz/git-update-ghpages/master/docs/images/env-variables.png" alt></p>
 </blockquote>
 <p>Alternatively, you can also use the <a href="http://rubygems.org/gems/travis">Travis CLI tool</a> to add this to your repo as a secure variable:</p>
 <pre><code class="lang-sh">travis encrypt GITHUB_TOKEN=<span class="pl-s">&quot;your token here&quot;</span> --add
@@ -110,18 +110,18 @@ Be sure to turn off the &#x201C;show this in build log&#x201D; option.</p>
 <span class="hljs-bullet">-</span> <span class="hljs-number">10</span>
 
 <span class="hljs-attr">env:</span>
-<span class="hljs-attr">  global:</span>
-<span class="hljs-attr">    - GIT_NAME:</span> <span class="pl-s">Travis</span> <span class="pl-s">CI</span>
-<span class="hljs-attr">    - GIT_EMAIL:</span> <span class="pl-s">nobody@nobody.org</span>
-<span class="hljs-attr">    - GITHUB_REPO:</span> <span class="pl-s">rstacruz/myproject</span>
-<span class="hljs-attr">    - GIT_SOURCE:</span> <span class="pl-s">_docpress</span>
+  <span class="hljs-attr">global:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">GIT_NAME:</span> <span class="pl-s">Travis</span> <span class="pl-s">CI</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">GIT_EMAIL:</span> <span class="pl-s">nobody@nobody.org</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">GITHUB_REPO:</span> <span class="pl-s">rstacruz/myproject</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">GIT_SOURCE:</span> <span class="pl-s">_docpress</span>
 
 <span class="hljs-attr">script:</span>
 <span class="hljs-bullet">-</span> <span class="pl-s">rake</span>     <span class="pl-c"># ...or whatever your test command is</span>
 <span class="hljs-bullet">-</span> <span class="pl-s">npm</span> <span class="pl-s">install</span> <span class="pl-s">docpress</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">./node_modules/.bin/docpress</span> <span class="pl-s">build</span>
 
 <span class="hljs-attr">after_success:</span>
-<span class="hljs-bullet">-</span> <span class="pl-s">if</span> <span class="pl-s">[</span> <span class="pl-s">&quot;$TRAVIS_BRANCH&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;master&quot;</span> <span class="hljs-bullet">-a</span> <span class="pl-s">&quot;$TRAVIS_PULL_REQUEST&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;false&quot;</span> <span class="pl-s">];</span> <span class="pl-s">then</span> <span class="pl-s">npm</span> <span class="pl-s">install</span> <span class="pl-s">git-update-ghpages</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">./node_modules/.bin/git-update-ghpages</span> <span class="hljs-bullet">-e;</span> <span class="pl-s">fi</span>
+<span class="hljs-bullet">-</span> <span class="pl-s">if</span> <span class="pl-s">[</span> <span class="pl-s">&quot;$TRAVIS_BRANCH&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;master&quot;</span> <span class="pl-s">-a</span> <span class="pl-s">&quot;$TRAVIS_PULL_REQUEST&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;false&quot;</span> <span class="pl-s">];</span> <span class="pl-s">then</span> <span class="pl-s">npm</span> <span class="pl-s">install</span> <span class="pl-s">git-update-ghpages</span> <span class="pl-s">&amp;&amp;</span> <span class="pl-s">./node_modules/.bin/git-update-ghpages</span> <span class="pl-s">-e;</span> <span class="pl-s">fi</span>
 </code></pre>
 <h2 id="for-node.js-projects">For Node.js projects</h2>
 <p>If your project is a Node.js project, you can simplify this by adding <code>docpress</code> and <code>git-update-ghpages</code> to your <em>devDependencies</em>.</p>
@@ -133,18 +133,18 @@ npm install --save-dev --save-exact git-update-ghpages
 <span class="hljs-bullet">-</span> <span class="hljs-number">10</span>
 
 <span class="hljs-attr">env:</span>
-<span class="hljs-attr">  global:</span>
-<span class="hljs-attr">    - GIT_NAME:</span> <span class="pl-s">Travis</span> <span class="pl-s">CI</span>
-<span class="hljs-attr">    - GIT_EMAIL:</span> <span class="pl-s">nobody@nobody.org</span>
-<span class="hljs-attr">    - GITHUB_REPO:</span> <span class="pl-s">rstacruz/myproject</span>
-<span class="hljs-attr">    - GIT_SOURCE:</span> <span class="pl-s">_docpress</span>
+  <span class="hljs-attr">global:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">GIT_NAME:</span> <span class="pl-s">Travis</span> <span class="pl-s">CI</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">GIT_EMAIL:</span> <span class="pl-s">nobody@nobody.org</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">GITHUB_REPO:</span> <span class="pl-s">rstacruz/myproject</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">GIT_SOURCE:</span> <span class="pl-s">_docpress</span>
 
 <span class="hljs-attr">script:</span>
 <span class="hljs-bullet">-</span> <span class="pl-s">rake</span>     <span class="pl-c"># ...or whatever your test command is</span>
 <span class="hljs-bullet">-</span> <span class="pl-s">./node_modules/.bin/docpress</span> <span class="pl-s">build</span>
 
 <span class="hljs-attr">after_success:</span>
-<span class="hljs-bullet">-</span> <span class="pl-s">if</span> <span class="pl-s">[</span> <span class="pl-s">&quot;$TRAVIS_BRANCH&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;master&quot;</span> <span class="hljs-bullet">-a</span> <span class="pl-s">&quot;$TRAVIS_PULL_REQUEST&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;false&quot;</span> <span class="pl-s">];</span> <span class="pl-s">then</span> <span class="pl-s">./node_modules/.bin/git-update-ghpages</span> <span class="hljs-bullet">-e;</span> <span class="pl-s">fi</span>
+<span class="hljs-bullet">-</span> <span class="pl-s">if</span> <span class="pl-s">[</span> <span class="pl-s">&quot;$TRAVIS_BRANCH&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;master&quot;</span> <span class="pl-s">-a</span> <span class="pl-s">&quot;$TRAVIS_PULL_REQUEST&quot;</span> <span class="pl-s">=</span> <span class="pl-s">&quot;false&quot;</span> <span class="pl-s">];</span> <span class="pl-s">then</span> <span class="pl-s">./node_modules/.bin/git-update-ghpages</span> <span class="pl-s">-e;</span> <span class="pl-s">fi</span>
 </code></pre>
 <h2 id="for-non-js-projects">For non-JS projects</h2>
 <p>The configuration above has <code>language: node_js</code>, which may not be what you want. In this case, swap out the <code>language</code> and <code>node_js</code> fields to invoke nvm <code>before_install</code>:</p>
