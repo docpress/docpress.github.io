@@ -82,7 +82,7 @@
           </div>
         </div>
         <div class="markdown-body"><h1 id="quick-start-guide">Quick-start guide</h1>
-<p>Docpress is available via <a href="https://www.npmjs.com/package/docpress">npm</a>. It requires <a href="http://nodejs.org/">Node.js</a> 4.0 or higher.</p>
+<p>Docpress is available via <a href="https://www.npmjs.com/package/docpress">npm</a>. It requires <a href="http://nodejs.org/">Node.js</a> 8.0 or higher.</p>
 <pre><code>npm install -g docpress
 </code></pre>
 <h2 id="local-installation">Local installation</h2>
@@ -94,7 +94,7 @@ npm install --save-dev --save-exact docpress
 <pre><code class="lang-sh"><span class="pl-c1">echo</span> _docpress &gt;&gt; .gitignore
 </code></pre>
 <h2 id="writing-content">Writing content</h2>
-<p>Write your first page. This is usually your project&#x2019;s <code>README.md</code>. This is a simple Markdown file. Chances are you already have this! You can add more pages later by creating a Table of Contents file (see <a href="more-pages.html">Writing more pages</a>).</p>
+<p>Write your first page. This is usually your project&#x2019;s <code>README.md</code>. This is a simple Markdown file. Chances are you already have this! You can add more pages later by creating a Table of Contents file (<code>docs/README.md</code>, see <a href="more-pages.html">Writing more pages</a>).</p>
 <p>Pages are written in Markdown&#x2013;an easy-to-read, easy-to-write plain text format. Files have the extension <code>.md</code>. Learn more about Markdown in GitHub&#x2019;s <a href="https://help.github.com/articles/markdown-basics/">Markdown Basics</a> guide.</p>
 <h5 id="readme.md"><code class="file-heading">README.md</code></h5>
 <pre><code class="lang-md"><span class="hljs-section">My project
@@ -102,6 +102,7 @@ npm install --save-dev --save-exact docpress
 
 This is my project and it is wonderful! Save this file as <span class="pl-c1">`README.md`</span>.
 </code></pre>
+<p>Generally this file has your project name, a summary, some badges, a screenshot and maybe author/contributor information and how to contribute as well as licensing information.</p>
 <h2 id="previewing-your-site">Previewing your site</h2>
 <p>Run the local server via <code>docpress s</code> (short for <code>serve</code>). This will build your site into <code>_docpress/</code> and run a local file server with LiveReload. You can then point your browser to <code>http://localhost:3000</code>.</p>
 <pre><code>docpress s
