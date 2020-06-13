@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="http://ricostacruz.com/docpress-rsc/style.css">
     <link rel="stylesheet" href="../assets/custom.css?t=202a34cf">
     <script src="../assets/script.js?t=93f1a66c"></script>
-    <title>Google Analytics - docpress</title>
+    <title>Create tables - docpress</title>
     <meta name="viewport" content="width=device-width">
     <script>if (false || window.location.hostname.indexOf("docpress.github.io") === window.location.hostname.length - 18) {
         (function(d,o,c,p,r,e,s){d['GoogleAnalyticsObject']=r;d[r]=d[r]||function(){(d[r].q=d[r].q||[]).push(arguments)},d[r].l=1*new Date();e=o.createElement(c),s=o.getElementsByTagName(c)[0];e.async=1;e.src=p;s.parentNode.insertBefore(e,s)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
@@ -33,7 +33,7 @@
                   </li>
                   <li class="menu-item -level-2"><a class="link title  link-getting-startedimages-and-linking" href="../getting-started/images-and-linking.html">Images and linking</a>
                   </li>
-                  <li class="menu-item -level-2"><a class="link title  link-getting-startedtables" href="../getting-started/tables.html">Create tables</a>
+                  <li class="menu-item -level-2"><a class="link title -active link-getting-startedtables" href="../getting-started/tables.html">Create tables</a>
                   </li>
                 </ul>
               </li>
@@ -49,7 +49,7 @@
                   </li>
                   <li class="menu-item -level-2"><a class="link title  link-customizationmarkdown" href="../customization/markdown.html">Markdown configuration</a>
                   </li>
-                  <li class="menu-item -level-2"><a class="link title -active link-customizationanalytics" href="../customization/analytics.html">Google Analytics</a>
+                  <li class="menu-item -level-2"><a class="link title  link-customizationanalytics" href="../customization/analytics.html">Google Analytics</a>
                   </li>
                   <li class="menu-item -level-2"><a class="link title  link-customizationdisqus" href="../customization/disqus.html">Disqus</a>
                   </li>
@@ -67,28 +67,62 @@
           </li>
         </ul>
       </div>
-      <div class="body page-customizationanalytics">
+      <div class="body page-getting-startedtables">
         <div class="header-nav">
           <div class="right"><a class="iconlink" href="https://github.com/docpress/docpress" data-title="docpress/docpress">
               <!-- span.title Open in GitHub--><span class="icon -github"></span></a>
           </div>
         </div>
-        <div class="markdown-body"><h1 id="google-analytics">Google Analytics</h1>
-<p>Enable <a href="https://google.com/analytics">Google Analytics</a> tracking in your docpress site by adding the <code>googleAnalytics</code> configuration key in <code>docpress.json</code>.</p>
-<h5 id="docpress.json"><code class="file-heading">docpress.json</code></h5>
-<pre><code class="lang-json">{
-  <span class="hljs-attr">&quot;googleAnalytics&quot;</span>: {
-    <span class="hljs-attr">&quot;id&quot;</span>: <span class="pl-s">&quot;UA-12345678-1&quot;</span>,
-    <span class="hljs-attr">&quot;domain&quot;</span>: <span class="pl-s">&quot;docpress.github.io&quot;</span>
-  }
-}
+        <div class="markdown-body"><h1 id="tables">Tables</h1>
+<p>Create markdown tables inside any .md file.</p>
+<pre><code class="lang-md">| ID   | Make   | Model   | Year   | Value   |
+|---|---|---|---|---|
+| 1  | Nissan  | Almera  | 97  | high  |
+| 3  | HONDA  | Civic  | 10  | low  |
+| 5  | Porsche  | Cayenne  | 05  | low  |
 </code></pre>
-<p>The <code>id</code> is the tracking ID given by Google Analytics. The <code>domain</code> is optional, but if enabled, the analytics code will only be used in this domain; this prevents pageviews from being logged when viewing your site in your local development machine.</p>
+<p>Above example renders like:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Make</th>
+<th>Model</th>
+<th>Year</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Nissan</td>
+<td>Almera</td>
+<td>97</td>
+<td>high</td>
+</tr>
+<tr>
+<td>3</td>
+<td>HONDA</td>
+<td>Civic</td>
+<td>10</td>
+<td>low</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Porsche</td>
+<td>Cayenne</td>
+<td>05</td>
+<td>low</td>
+</tr>
+</tbody>
+</table>
+<p>You can use the tablegenerator for markdown to obtain nice structured tables.
+<a href="https://www.tablesgenerator.com/markdown_tables">https://www.tablesgenerator.com/markdown_tables</a></p>
 
         </div>
         <div class="footer-nav">
-          <div class="left"><a href="../customization/markdown.html"><span class="title">Markdown configuration</span></a></div>
-          <div class="right"><a href="../customization/disqus.html"><span class="label">Next: </span><span class="title">Disqus</span></a></div>
+          <div class="left"><a href="../getting-started/images-and-linking.html"><span class="title">Images and linking</span></a></div>
+          <div class="right"><a href="../customization/config.html"><span class="label">Next: </span><span class="title">Configuration</span></a></div>
         </div>
       </div>
     </div>

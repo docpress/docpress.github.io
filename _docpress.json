@@ -116,6 +116,12 @@
             "source": "docs/getting-started/images-and-linking.md",
             "url": "getting-started/images-and-linking.html",
             "slug": "getting-startedimages-and-linking"
+          },
+          {
+            "title": "Create tables",
+            "source": "docs/getting-started/tables.md",
+            "url": "getting-started/tables.html",
+            "slug": "getting-startedtables"
           }
         ]
       },
@@ -367,6 +373,12 @@
       "pageTitle": "Images and linking",
       "slug": "getting-startedimages-and-linking"
     },
+    "getting-started/tables.html": {
+      "source": "docs/getting-started/tables.md",
+      "title": "Create tables - docpress",
+      "pageTitle": "Create tables",
+      "slug": "getting-startedtables"
+    },
     "customization/config.html": {
       "source": "docs/customization/config.md",
       "title": "Configuration - docpress",
@@ -496,6 +508,7 @@
     "docs/getting-started/quickstart.md": "getting-started/quickstart.html",
     "docs/getting-started/more-pages.md": "getting-started/more-pages.html",
     "docs/getting-started/images-and-linking.md": "getting-started/images-and-linking.html",
+    "docs/getting-started/tables.md": "getting-started/tables.html",
     "docs/customization/config.md": "customization/config.html",
     "docs/customization/css.md": "customization/css.html",
     "docs/customization/scripts.md": "customization/scripts.html",
